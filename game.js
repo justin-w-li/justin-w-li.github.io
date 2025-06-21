@@ -110,7 +110,7 @@ class Player extends Sprite {
         this.speedY = 0;
         this.expand = 0;
         this.billowRate = 0.9;
-        // this.pos = new Array(20);
+        this.pos = new Array(20);
     }
     draw() {
         this.rewindow();
@@ -120,13 +120,13 @@ class Player extends Sprite {
         let relX = this.x - window.screenLeft;
         let relY = this.y - window.screenTop;
 
-        // ctx.fillStyle = this.color;
-        // for (const pos of this.pos) {
-        //     if (pos === undefined) { continue; }
-        //     ctx.fillRect(pos[0]-window.screenLeft-this.width/2,
-        //                  pos[1]-window.screenTop-this.height/2,
-        //                  this.width, this.height);
-        // }
+        ctx.fillStyle = this.color;
+        for (const pos of this.pos) {
+            if (pos === undefined) { continue; }
+            ctx.fillRect(pos[0]-window.screenLeft-this.width/2,
+                         pos[1]-window.screenTop-this.height/2,
+                         this.width, this.height);
+        }
 
         ctx.lineWidth = 2;
         ctx.globalAlpha = Math.max(0, 1-0.5*(this.windowW-WINDOW_MIN)/100);
@@ -144,8 +144,8 @@ class Player extends Sprite {
         this.y += this.speedY;
         this.inBounds();
 
-        // this.pos.shift();
-        // this.pos.push([this.x, this.y]);
+        this.pos.shift();
+        this.pos.push([this.x, this.y]);
     }
     billow() {
         let windowSmaller = Math.min(this.windowW, this.windowH);
