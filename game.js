@@ -1,166 +1,51 @@
-const SCREEN_WIDTH = window.screen.width;
-const SCREEN_HEIGHT = window.screen.height;
-const TOOLBAR_HEIGHT = window.outerHeight-window.innerHeight;
-const WINDOW_MIN = 145;
+// GAME LOGIC
 
-var gamePiece;
+let gamePiece;
 
 function startGame() {
     let initialX = window.innerWidth/2 + window.screenLeft;
     let initialY = window.innerHeight/2 + window.screenTop;
     let pieceSize = 30;
-    let initialWindow = 400;
 
     gamePiece = new Player(
-        "#aaaaff", initialX, initialY,
-        pieceSize, pieceSize, initialWindow, initialWindow
+        initialX, initialY, pieceSize, pieceSize
     );
+
+    // start game loop
     gameArea.start();
 }
 
-var gameArea = {
+let gameArea = {
     canvas : document.createElement("canvas"),
+    
     start : function() {
+        // fix canvas to window
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
+        this.canvas.style.position = 'fixed';
+        this.canvas.style.top = '0px';
+        this.canvas.style.left = '0px';
+        this.canvas.style.width = '100%';
+        this.canvas.style.height = '100%';
+        this.canvas.style.zIndex = '88';
+        window.addEventListener('resize', () => {
+            this.canvas.width = window.innerWidth;
+            this.canvas.height = window.innerHeight;
+        });
+
+        // make clicks go through
+        this.canvas.style.pointerEvents = 'none';
         this.context = this.canvas.getContext("2d");
         document.body.appendChild(this.canvas);
+
+        // 50 fps timer for game loop
         this.interval = setInterval(updateGameArea, 20);
     },
+
+    // used to avoid rendering graphics outside of the window
     update : function() {
         this.canvas.width = window.innerWidth;
         this.canvas.height = window.innerHeight;
-    }
-}
-
-class Sprite {
-    constructor(color, x, y, width, height, windowW, windowH) {
-        this.color = color;
-        this.x = x;
-        this.y = y;
-        this.width = width;
-        this.height = height;
-        this.windowW = windowW;
-        this.windowH = windowH;
-    }
-    rewindow() {
-        let tempWindowW = Math.min(
-            this.windowW, this.x+this.windowW/2,
-            SCREEN_WIDTH-(this.x-this.windowW/2));
-        let tempWindowH = Math.min(
-            this.windowH, this.y+this.windowH/2,
-            SCREEN_HEIGHT-(this.y-this.windowH/2));
-        window.resizeTo(tempWindowW, tempWindowH+TOOLBAR_HEIGHT);
-        window.moveTo(this.x-this.windowW/2, this.y-this.windowH/2);
-    }
-    draw() {
-        this.rewindow();
-
-        let ctx = gameArea.context;
-        let relX = this.x - window.screenLeft;
-        let relY = this.y - window.screenTop;
-
-        ctx.fillStyle = this.color;
-        ctx.fillRect(relX-this.width/2, relY-this.height/2, this.width, this.height);
-    }
-    getSpriteEdge(edge) {
-        switch (edge) {
-            case "top":
-                return this.y-this.height/2;
-            case "left":
-                return this.x-this.width/2;
-            case "bottom":
-                return this.y+this.height/2;
-            case "right":
-                return this.x+this.width/2;
-        }
-    }
-    getWindowEdge(edge) {
-        switch (edge) {
-            case "top":
-                return window.screenTop;
-            case "left":
-                return window.screenLeft;
-            case "bottom":
-                return window.screenTop + window.innerHeight;
-            case "right":
-                return window.screenLeft + window.innerWidth;
-        }
-    }
-    inBounds() {
-        if (this.getSpriteEdge("top") < this.getWindowEdge("top")) {
-            this.y = window.screenTop + this.height/2;
-        }
-        if (this.getSpriteEdge("left") < this.getWindowEdge("left")) {
-            this.x = window.screenLeft + this.width/2;
-        }
-        if (this.getSpriteEdge("bottom") > this.getWindowEdge("bottom")) {
-            this.y = window.screenTop + window.innerHeight - this.height/2;
-        }
-        if (this.getSpriteEdge("right") > this.getWindowEdge("right")) {
-            this.x = window.screenLeft + window.innerWidth - this.width/2;
-        }
-    }
-}
-
-class Player extends Sprite {
-    constructor(color, x, y, width, height, windowW, windowH) {
-        super(color, x, y, width, height, windowW, windowH);
-        this.speedX = 0;
-        this.speedY = 0;
-        this.expand = 0;
-        this.billowRate = 0.9;
-        this.pos = new Array(20);
-    }
-    draw() {
-        this.rewindow();
-        super.draw();
-        
-        let ctx = gameArea.context;
-        let relX = this.x - window.screenLeft;
-        let relY = this.y - window.screenTop;
-
-        ctx.fillStyle = this.color;
-        for (const pos of this.pos) {
-            if (pos === undefined) { continue; }
-            ctx.fillRect(pos[0]-window.screenLeft-this.width/2,
-                         pos[1]-window.screenTop-this.height/2,
-                         this.width, this.height);
-        }
-
-        ctx.lineWidth = 2;
-        ctx.globalAlpha = Math.max(0, 1-0.5*(this.windowW-WINDOW_MIN)/100);
-        ctx.strokeStyle = "#ffaaaa";
-        ctx.strokeRect(relX-WINDOW_MIN/2, relY-WINDOW_MIN/2, WINDOW_MIN, WINDOW_MIN);
-    }
-    update() {
-        if (this.expand > 1) {
-            this.windowW += this.expand;
-            this.windowH += this.expand;
-            this.expand *= this.billowRate;
-        }
-        this.shrinkWindow();
-    	this.x += this.speedX;
-        this.y += this.speedY;
-        this.inBounds();
-
-        this.pos.shift();
-        this.pos.push([this.x, this.y]);
-    }
-    billow() {
-        let windowSmaller = Math.min(this.windowW, this.windowH);
-        let billowAmount = windowSmaller >= 400
-            ? 150 : 24000/windowSmaller + 90;
-        console.log(billowAmount);
-        this.expand = billowAmount * (1 - this.billowRate);
-    }
-    shrinkWindow() {
-        if (this.expand > 1) { return; }
-        let windowBigger = Math.max(this.windowW, this.windowH);
-        let shrinkAmount = windowBigger >= 600
-            ? (windowBigger-500)/400+1 : ((windowBigger-100)**2)/400000+0.5;
-        this.windowW = Math.max(this.windowW-shrinkAmount, WINDOW_MIN);
-        this.windowH = Math.max(this.windowH-shrinkAmount, WINDOW_MIN);
     }
 }
 
@@ -170,16 +55,89 @@ function updateGameArea() {
     gamePiece.draw();
 }
 
-window.addEventListener("load", () => {
-    startGame();
-});
 
-window.addEventListener("beforeunload", function(e){
-   e.preventDefault();
-});
+// SPRITES
 
-window.addEventListener("keydown", (e) => {
-    switch (e.key) {
+class Sprite {
+    constructor(color, x, y, width, height) {
+        this.color = color; // color of sprite
+        this.x = x; // absolute position of sprite center on screen
+        this.y = y;
+        this.width = width; // width of sprite
+        this.height = height;
+    }
+    draw() {
+        let ctx = gameArea.context;
+        let relX = this.x - window.screenLeft;
+        let relY = this.y - window.screenTop;
+
+        ctx.fillStyle = this.color;
+        ctx.fillRect(relX-this.width/2, relY-this.height/2, this.width, this.height);
+    }
+}
+
+function interpolate(color1, color2, t) {
+    const r1 = parseInt(color1.substring(1, 3), 16);
+    const g1 = parseInt(color1.substring(3, 5), 16);
+    const b1 = parseInt(color1.substring(5, 7), 16);
+
+    const r2 = parseInt(color2.substring(1, 3), 16);
+    const g2 = parseInt(color2.substring(3, 5), 16);
+    const b2 = parseInt(color2.substring(5, 7), 16);
+
+    const r = Math.round(r1 + (r2 - r1) * t);
+    const g = Math.round(g1 + (g2 - g1) * t);
+    const b = Math.round(b1 + (b2 - b1) * t);
+
+    return "#" + ((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1);
+}
+
+class Player extends Sprite {
+    constructor(x, y, width, height) {
+        super("#000000", x, y, width, height);
+        this.color = "#aaaaff";
+        this.color2 = "#6953b9"
+        this.speedX = 0; // current speed of player
+        this.speedY = 0;
+        this.length = 20;
+        this.tail = []; // array of tail positions
+    }
+    draw() {
+        let ctx = gameArea.context;
+
+        // draw tail of snake
+        let len = this.tail.length;
+        for (let i = len - 1; i >= 0; i--) {
+            let pos = this.tail[i];
+            ctx.fillStyle = interpolate(this.color, this.color2, i / len);
+            ctx.fillRect(pos[0]-window.screenLeft-this.width/2,
+                         pos[1]-window.screenTop-this.height/2,
+                         this.width, this.height);
+        }
+
+        // draw head
+        super.draw();
+    }
+    update() {
+        // add old pos to tail if moved
+        if (this.speedX != 0 || this.speedY != 0) {
+            this.tail.unshift([this.x, this.y]);
+            if (this.tail.length > this.length) {
+                this.tail.pop();
+            }
+        }
+
+        // update pos
+    	this.x += this.speedX;
+        this.y += this.speedY;
+    }
+}
+
+
+// EVENT HANDLERS
+
+window.addEventListener("keydown", (event) => {
+    switch (event.key) {
         case "w":
             gamePiece.speedY = -5;
             break;
@@ -198,8 +156,8 @@ window.addEventListener("keydown", (e) => {
     }
 });
 
-window.addEventListener("keyup", (e) => {
-    switch (e.key) {
+window.addEventListener("keyup", (event) => {
+    switch (event.key) {
         case "w":
             gamePiece.speedY = Math.max(gamePiece.speedY, 0);
             break;
@@ -215,4 +173,7 @@ window.addEventListener("keyup", (e) => {
     }
 });
 
-document.body.style.overflow = 'hidden';
+
+// START
+
+startGame();
