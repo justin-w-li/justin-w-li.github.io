@@ -1,0 +1,1362 @@
+ 
+/* start css.sty */
+.ec-lmr-10x-x-109{}
+.ec-lmr-17{font-size:154%;}
+.ec-lmr-12{font-size:109%;}
+.ec-lmr-10{font-size:90%;}
+.ec-lmtt-10{font-size:90%; font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ec-lmtt-10{ font-family: monospace,monospace;}
+.ts1-lmr12-{font-size:109%;}
+.ts1-lmr10-x-x-109{}
+.ec-lmbx-10{font-size:90%; font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmbx-10{ font-weight: bold;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmtt-10x-x-109{ font-family: monospace,monospace;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmri-10x-x-109{ font-style:italic;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+.ec-lmbx-10x-x-109{ font-weight: bold;}
+p{margin-top:0;margin-bottom:0}
+p.indent{text-indent:0;}
+p + p{margin-top:1em;}
+p + div, p + pre {margin-top:1em;}
+div + p, pre + p {margin-top:1em;}
+a { overflow-wrap: break-word; word-wrap: break-word; word-break: break-word; hyphens: auto; }
+@media print {div.crosslinks {visibility:hidden;}}
+table.tabular{border-collapse: collapse; border-spacing: 0;}
+a img { border-top: 0; border-left: 0; border-right: 0; }
+center { margin-top:1em; margin-bottom:1em; }
+td center { margin-top:0em; margin-bottom:0em; }
+.Canvas { position:relative; }
+img.math{vertical-align:middle;}
+div.par-math-display, div.math-display{text-align:center;}
+body{ margin:1em auto; max-width:80ch; padding:0 .62em; }
+h1,h2,h3,h4,h5 { line-height:1.2; }
+@media print{ body{ max-width:none } }
+.partHead, .likepartHead { font-size: 2em; }
+.chapterHead, .likechapterHead { font-size: 1.7411em; }
+.sectionHead, .likesectionHead { font-size: 1.5157em; }
+.subsectionHead, .likesubsectionHead { font-size: 1.3195em; }
+.subsubsectionHead, .likesubsubsectionHead { font-size: 1.1487em; }
+ @media (prefers-color-scheme: dark) { img[src^="main"]{filter: invert(1); } } 
+ body { background-color: Canvas; color: CanvasText; color-scheme: light dark; } 
+li p.indent:not(.tex8web-list *) { text-indent: 0em }
+li p:first-child:not(.tex8web-list *) { margin-top:0em; }
+li p:last-child:not(.tex8web-list *), li div:last-child:not(.tex8web-list *) { margin-bottom:0.5em; }
+li p:first-child:not(.tex8web-list *) { margin-bottom:0; }
+li p~ul:last-child:not(.tex8web-list *), li p~ol:last-child:not(.tex8web-list *) { margin-bottom:0.5em; }
+ul.itemize1,ol.enumerate1{padding-left: 0;}
+ul li.itemize,ol li.enumerate{margin-left: 1rem;}
+.enumerate1 {list-style-type:decimal;}
+.enumerate2 {list-style-type:lower-alpha;}
+.enumerate3 {list-style-type:lower-roman;}
+.enumerate4 {list-style-type:upper-alpha;}
+div.newtheorem { margin-bottom: 2em; margin-top: 2em;}
+div.newtheorem .head{font-weight: bold;}
+.obeylines-h,.obeylines-v {white-space: nowrap; }
+div.obeylines-v p { margin-top:0; margin-bottom:0; }
+.overline{ text-decoration:overline; }
+.overline img{ border-top: 1px solid currentColor; }
+td.displaylines {text-align:center; white-space:nowrap;}
+.centerline {text-align:center;}
+.rightline {text-align:right;}
+pre.verbatim {font-family: monospace,monospace; text-align:left; clear:both; }
+.fbox {padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid currentColor 0.4pt; }
+div.fbox {display:table}
+div.center div.fbox {text-align:center; clear:both; padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid currentColor 0.4pt; }
+div.minipage{width:100%;}
+div.center, div.center div.center {text-align: center; margin-left:1em; margin-right:1em;}
+div.center div {text-align: left;}
+div.flushright, div.flushright div.flushright {text-align: right;}
+div.flushright div {text-align: left;}
+div.flushleft {text-align: left;}
+.underline{ text-decoration:underline; }
+.underline img{ border-bottom: 1px solid currentColor; margin-bottom:1pt; }
+.framebox-c, .framebox-l, .framebox-r { padding-left:3.0pt; padding-right:3.0pt; text-indent:0pt; border:solid currentColor 0.4pt; }
+.framebox-c {text-align:center;}
+.framebox-l {text-align:left;}
+.framebox-r {text-align:right;}
+span.thank-mark{ vertical-align: super }
+span.footnote-mark sup.textsuperscript, span.footnote-mark a sup.textsuperscript{ font-size:80%; }
+div.footnotes{border-top:solid 1px currentColor; border-bottom:solid 1px currentColor; padding-bottom:1ex; padding-top:0.5ex; margin-right:15%; margin-top:2ex; font-size:85%;}
+div.footnotes p{margin-top:0; margin-bottom:0; text-indent:0;}
+code.verb{font-family:monospace,monospace;}
+div.tabular, div.center div.tabular {text-align: center; margin-top:0.5em; margin-bottom:0.5em; }
+table.tabular td p{margin-top:0em;}
+table.tabular {margin-left: auto; margin-right: auto;}
+td p:first-child{ margin-top:0em; }
+td p:last-child{ margin-bottom:0em; }
+div.td00{ margin-left:0pt; margin-right:0pt; }
+div.td01{ margin-left:0pt; margin-right:5pt; }
+div.td10{ margin-left:5pt; margin-right:0pt; }
+div.td11{ margin-left:5pt; margin-right:5pt; }
+table[rules] {border-left:solid currentColor 0.4pt; border-right:solid currentColor 0.4pt; }
+td.td00{ padding-left:0pt; padding-right:0pt; }
+td.td01{ padding-left:0pt; padding-right:5pt; }
+td.td10{ padding-left:5pt; padding-right:0pt; }
+td.td11{ padding-left:5pt; padding-right:5pt; }
+table[rules] {border-left:solid currentColor 0.4pt; border-right:solid currentColor 0.4pt; }
+.hline hr, .cline hr{ height : 0px; margin:0px; }
+.hline td, .cline td{ padding: 0; }
+.hline hr, .cline hr{border:none;border-top:1px solid currentColor;}
+.hline {border-top: 1px solid currentColor;}
+.hline + .vspace:last-child{display:none;}
+.tabbing-right {text-align:right;}
+div.float, div.figure {margin-left: auto; margin-right: auto;}
+div.float img {text-align:center;}
+div.figure img {text-align:center;}
+.marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+.marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+.reversemarginpar{float:left;}
+table.equation {width:100%;}
+.equation td{text-align:center; }
+td.equation { margin-top:1em; margin-bottom:1em; } 
+td.equation-label { width:5%; text-align:center; }
+td.eqnarray4 { width:5%; white-space: normal; }
+td.eqnarray2 { width:5%; }
+table.eqnarray-star, table.eqnarray {width:100%;}
+div.eqnarray{text-align:center;}
+div.array {text-align:center;}
+div.pmatrix {text-align:center;}
+table.pmatrix {width:100%;}
+span.pmatrix img{vertical-align:middle;}
+div.pmatrix {text-align:center;}
+table.pmatrix {width:100%;}
+span.bar-css {text-decoration:overline;}
+img.cdots{vertical-align:middle;}
+.partToc a, .partToc, .likepartToc a, .likepartToc {line-height: 200%; font-weight:bold; font-size:110%;}
+.theindex-letter{ margin-top: 1em;}
+.index-subitem{ margin-left: 2ch;}
+.index-subsubitem{ margin-left: 4ch;}
+div.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center; margin-top: 0.5rem;}
+div.caption span.id{font-weight: bold; white-space: nowrap; }
+h1.partHead{text-align: center}
+p.bibitem { text-indent: -2em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-bottom:0.6em; }
+.subsubsectionHead, .likesubsubsectionHead { font-size: 1em; }
+.paragraphHead, .likeparagraphHead { margin-top:2em; font-weight: bold;}
+.subparagraphHead, .likesubparagraphHead { font-weight: bold;}
+.verse{white-space:nowrap; margin-left:2em}
+div.maketitle {text-align:center;}
+h1.titleHead{text-align:center;}
+div.maketitle{ margin-bottom: 2em; }
+div.author, div.date {text-align:center;}
+div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
+div.abstract p {margin-left:5%; margin-right:5%;}
+div.abstract {width:100%;}
+.abstracttitle{text-align:center;margin-bottom:1em;}
+.subsectionToc, .likesubsectionToc {margin-left:1em;}
+.subsubsectionToc, .likesubsubsectionToc {margin-left:2em;}
+.paragraphToc, .likeparagraphToc {margin-left:3em;}
+.subparagraphToc, .likesubparagraphToc {margin-left:4em;}
+figure.float, div.figure {margin-left: auto; margin-right: auto;}
+figure.figure {text-align:center;}
+figcaption.caption {text-indent:-2em; margin-left:3em; margin-right:1em; text-align:center;}
+figcaption.caption span.id{font-weight: bold; white-space: nowrap; }
+p + figcaption, img + figcaption{margin-top: 1em;}
+.thebibliography dl { display: grid; grid-auto-columns: min-content 1fr; grid-auto-flow: column; }
+.thebibliography dt { grid-column: 1; margin-bottom: 0.5em; }
+.abstract{margin:1em;}
+.textls{letter-spacing:0.05rem;}
+.equation td{text-align:center; }
+.equation-star td{text-align:center; }
+table.equation-star { width:100%; }
+table.equation { width:100%; }
+table.align, table.alignat, table.xalignat, table.xxalignat, table.flalign {width:95%; margin-left:5%; white-space: nowrap;}
+table.align-star, table.alignat-star, table.xalignat-star, table.flalign-star {margin-left:auto; margin-right:auto; white-space: nowrap;}
+td.align-label { width:5%; text-align:center; }
+td.align-odd { text-align:right; padding-right:0.3em;}
+td.align-even { text-align:left; padding-right:0.6em;}
+table.multline, table.multline-star {width:100%;}
+td.gather {text-align:center; }
+table.gather {width:100%;}
+div.gather-star {text-align:center;}
+span.textso{letter-spacing: 0.3em; word-spacing: 0.3em}
+span.textul{text-decoration:underline}
+span.textst{text-decoration:line-through}
+span.textcaps{font-variant:small-caps}
+div.colorbox {width: fit-content; padding: 0.2em;}
+.rotatebox{display: inline-block;}
+dl.enumerate-enumitem{display:grid; grid-template-columns: min-content 1fr; align-items: top; row-gap:0ch;}
+dt.enumerate-enumitem{text-align: right;}
+dd.enumerate-enumitem{margin-left:1ch;}
+/* tex8web: the page's styles. tex8web.mk4 puts them into the document's
+   stylesheet where tex8web-core.tex marks their place: after tex4ht's
+   rules, which they override, and before a config's \Css, which overrides
+   them. A --tex8web-* property without a default here is a length or color
+   of the document, set by the tex/ files */
+
+/* --- colors ------------------------------------------------------------ */
+
+/* the reader's light or dark setting, unless the root element has
+   data-theme="light" or "dark". Light mode uses the PDF's colors */
+:root { color-scheme: light dark; }
+:root[data-theme="light"] { color-scheme: light; }
+:root[data-theme="dark"] { color-scheme: dark; }
+/* (tex4ht sets color-scheme on body, which would keep the page in the
+   system's setting; "html body" outweighs tex4ht's body rules) */
+html body { color-scheme: inherit; }
+:root { --tex8web-bg: light-dark(#FFFFFF, #201E1D); --tex8web-text: light-dark(#000000, #E3E3E3); }
+/* the document's colors in dark mode: the same hue at another oklch
+   lightness (l), written as oklch(from <color> var(--tex8web-dark-<kind>)
+   c h) by tex8web-boxes.tex, tex8web-page.tex, assets.lua, and tex8web.js.
+   Text is as light as it was dark, backgrounds as dark as they were light,
+   and borders at least 0.62, so that they show. Links are at least 0.75,
+   with chroma (c) at most 0.14, so that they stand out on the dark
+   background as on white without glaring */
+:root { --tex8web-dark-color: max(l, 1 - l); --tex8web-dark-background: min(l, 1.24 - l);
+    --tex8web-dark-border: max(l, 0.62); --tex8web-dark-link: max(l, 1 - l, 0.75);
+    --tex8web-dark-link-chroma: min(c, 0.14); }
+/* highlight: a link's target and the table of contents entry of the
+   section being read. Hover: what is under the mouse. The dark highlight
+   is a grayed mauve, distinct from yellow and pink highlighters. The dark
+   hover is stronger because 8% barely shows on a dark background */
+:root { --tex8web-highlight: light-dark(#EAECF6, #383234);
+    --tex8web-hover: light-dark(color-mix(in srgb, currentColor 8%, transparent),
+        color-mix(in srgb, currentColor 14%, transparent)); }
+html body { background-color: var(--tex8web-bg); color: var(--tex8web-text); }
+/* links: hyperref's colors with colorlinks (tex8web-page.tex), in dark
+   mode as above. Otherwise
+   the text's color, with a faint underline where the PDF draws boxes, and
+   none with hidelinks (.tex8web-plain-links). No underline in the table of
+   contents, the controls, or the # links, which belong to the page, nor
+   under a footnote's raised mark, where an underline looks like a stray
+   rule */
+a { color: var(--tex8web-link, inherit); text-decoration: none; }
+a[href] { text-decoration: underline; text-decoration-thickness: 1px;
+    text-underline-offset: 0.15em; text-decoration-color: color-mix(in srgb, currentColor 40%, transparent); }
+:is(.tex8web-toc, .tex8web-controls, .footnote-mark, .tex8web-plain-links) a, a.tex8web-permalink {
+    text-decoration: none; }
+a[href^="#X"] { color: var(--tex8web-cite, inherit); }
+/* (hyperref's urlcolor also colors \href to another site, but not the
+   controls' link to tex8web's repository) */
+a.url, a[href*="://"]:not(.tex8web-control), a[href^="mailto:"] { color: var(--tex8web-url, inherit); }
+/* pictures tex4ht generates (TikZ) are black line art, inverted in dark
+   mode (tex8web-page.tex selects them by the document's name) */
+@media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) { --tex8web-picture-filter: invert(1); } }
+:root[data-theme="dark"] { --tex8web-picture-filter: invert(1); }
+
+/* --- fonts ------------------------------------------------------------- */
+
+/* copied into fonts/ by tex8web.mk4 */
+@font-face { font-family: "Latin Modern Roman";
+    src: url("fonts/lmroman10-regular.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Roman"; font-weight: bold;
+    src: url("fonts/lmroman10-bold.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Roman"; font-style: italic;
+    src: url("fonts/lmroman10-italic.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Roman"; font-weight: bold; font-style: italic;
+    src: url("fonts/lmroman10-bolditalic.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Mono";
+    src: url("fonts/lmmono10-regular.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Sans";
+    src: url("fonts/lmsans10-regular.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Sans"; font-weight: bold;
+    src: url("fonts/lmsans10-bold.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Sans"; font-style: italic;
+    src: url("fonts/lmsans10-oblique.woff2") format("woff2"); }
+@font-face { font-family: "Latin Modern Sans"; font-weight: bold; font-style: italic;
+    src: url("fonts/lmsans10-boldoblique.woff2") format("woff2"); }
+/* (assets.lua sets these again to TeX Gyre or XCharter, for a document in
+   Times or another font they cover) */
+:root { --tex8web-roman: "Latin Modern Roman", serif; --tex8web-sans: "Latin Modern Sans", sans-serif;
+    --tex8web-mono: "Latin Modern Mono", monospace; }
+html body { font-family: var(--tex8web-roman); }
+/* typewriter and sans-serif text: tex4ht's class names for Latin Modern
+   and for Computer Modern (without lmodern) */
+[class*="-lmtt"], [class^="cmtt-"], [class^="ectt-"] { font-family: var(--tex8web-mono); }
+[class*="-lmss"], [class^="cmss"], [class^="ecss"] { font-family: var(--tex8web-sans); }
+/* (TeX Live's ht-fonts/alias/times/ptmr7t.htf calls Times monospace) */
+[class^="ptmr7t-"] { font-family: inherit; }
+/* Latin Modern's no-break space (~) is 0.5em wide, its space 0.333em.
+   text.lua marks no-break spaces, and keeps one together with the math
+   next to it */
+.tex8web-nbsp { letter-spacing: -0.167em; }
+.tex8web-nowrap { white-space: nowrap; }
+/* \TeX and \LaTeX (tex8web-text.tex), kerned and moved as in LaTeX: the E
+   down half an ex, the A in \sf@size (7 of 10) with its top at the T's */
+.tex8web-tex, .tex8web-latex { white-space: nowrap; }
+.tex8web-e { position: relative; top: 0.216em; margin-inline: -0.1667em -0.125em; }
+.tex8web-a { font-size: 0.7em; position: relative; top: -0.293em; margin-inline: -0.514em -0.214em; }
+/* tex4ht marks a theorem head's fonts span by span ("Theorem 1" bold, the
+   note after it not), but html4.4ht also sets the whole head in bold */
+div.newtheorem .head { font-weight: normal; }
+
+/* --- layout ------------------------------------------------------------ */
+
+/* text at the reader's default font size, 12pt unless the reader changes
+   it, larger than most PDFs, for a screen. Headings keep their PDF ratio to
+   the text, and MathJax and tex4ht size math and other fonts relative to
+   the text */
+html body { font-size: calc(var(--tex8web-pdf-scale, 1) * 1rem); }
+/* \WebLikePDF (tex8web-page.tex) scales the text above by the PDF's size
+   over 12pt, and sets the PDF's leading, paragraphs, and justification
+   here. Text is justified and hyphenated only on a wide screen, and not in
+   the margin notes: in a narrow column, a formula that cannot break leaves
+   wide gaps. Hyphenation uses the root's lang, which tex4ht takes from
+   babel */
+html body { line-height: var(--tex8web-pdf-leading, normal); }
+p.indent { text-indent: var(--tex8web-parindent, 0); }
+p + p { margin-top: var(--tex8web-parskip, 1em); }
+@media (min-width: 79.00em) {
+    .tex8web-like-pdf body { text-align: justify; hyphens: auto; } }
+:is(.tex8web-toc, .tex8web-sidenote, .tex8web-controls) { text-align: start; hyphens: manual; }
+h1.titleHead { font-size: var(--tex8web-title-size); font-weight: normal; }
+/* (a \thanks is an upright footnote in the PDF; html4.4ht sets it in italic) */
+div.thanks { font-style: normal; }
+/* (lh in line-height is the parent's, so this is a fraction of the text's
+   leading. The margins are those of the list the class sets the abstract
+   in, in place of html4.4ht's) */
+.abstract p { line-height: calc(var(--tex8web-abstract-leading, 1) * 1lh); }
+section.abstract { margin-inline: 0; }
+.abstract p { margin-inline: var(--tex8web-abstract-left, 0) var(--tex8web-abstract-right, 0); }
+/* (a part's or chapter's label, "Chapter 1", sits above the title in a
+   separate size, and in memoir in a separate font, unless titlesec formats
+   it. The label is a block, spaced from the title as in the class
+   (tex8web-page.tex). html4.4ht puts a <br /> after a chapter's label,
+   which is hidden, and at the end of a part's label, where it adds no
+   line. amsart's part label has no <br />, and stays on the title's line) */
+.partHead, .likepartHead { font-size: var(--tex8web-part-size, 2em);
+    font-family: var(--tex8web-part-family, inherit);
+    font-weight: var(--tex8web-part-weight, bold);
+    font-style: var(--tex8web-part-style, normal); }
+.partHead .titlemark { font-size: var(--tex8web-part-label-size, 1em);
+    font-family: var(--tex8web-part-label-family, inherit);
+    font-weight: var(--tex8web-part-label-weight, inherit);
+    font-style: var(--tex8web-part-label-style, inherit);
+    font-variant: var(--tex8web-part-label-variant, inherit); }
+.partHead .titlemark:has(> br) { display: block;
+    margin-bottom: var(--tex8web-part-label-after, 0); }
+/* (the space after a label on a line of its own, which would indent the
+   title, text.lua) */
+.partHead .titlemark:has(> br) + .tex8web-labelsep { display: none; }
+.chapterHead, .likechapterHead, .appendixHead { font-size: var(--tex8web-chapter-size);
+    font-family: var(--tex8web-chapter-family, inherit);
+    font-weight: var(--tex8web-chapter-weight, bold);
+    font-style: var(--tex8web-chapter-style, normal); }
+:is(.chapterHead, .appendixHead) .titlemark { font-size: var(--tex8web-chapter-label-size, 1em);
+    display: block; margin-bottom: var(--tex8web-chapter-label-after, 0);
+    font-family: var(--tex8web-chapter-label-family, inherit);
+    font-weight: var(--tex8web-chapter-label-weight, inherit);
+    font-style: var(--tex8web-chapter-label-style, inherit);
+    font-variant: var(--tex8web-chapter-label-variant, inherit); }
+:is(.chapterHead, .appendixHead) .titlemark + br { display: none; }
+/* (the link to a chapter on the label's line: in the label's size, the
+   link's line is as tall as the label's, and the two share a baseline) */
+:is(.chapterHead, .appendixHead):has(> .titlemark) > .tex8web-permalink {
+    font-size: var(--tex8web-chapter-label-size, 1em); }
+.sectionHead, .likesectionHead { font-size: var(--tex8web-section-size);
+    font-family: var(--tex8web-section-family, inherit);
+    font-weight: var(--tex8web-section-weight, bold);
+    font-style: var(--tex8web-section-style, normal); }
+.subsectionHead, .likesubsectionHead { font-size: var(--tex8web-subsection-size);
+    font-family: var(--tex8web-subsection-family, inherit);
+    font-weight: var(--tex8web-subsection-weight, bold);
+    font-style: var(--tex8web-subsection-style, normal); }
+.subsubsectionHead, .likesubsubsectionHead { font-size: var(--tex8web-subsubsection-size);
+    font-family: var(--tex8web-subsubsection-family, inherit);
+    font-weight: var(--tex8web-subsubsection-weight, bold);
+    font-style: var(--tex8web-subsubsection-style, normal); }
+/* (titlesec's variant and alignment, and the space around a heading from
+   titlesec or the class (tex8web-page.tex), else the browser's h1 to h5
+   margins, and for a part a chapter's space where it has a page of its
+   own in the PDF. :where lets a class's rules in html4.4ht take
+   precedence, for example amsart's centered sections) */
+:where(.partHead, .likepartHead) { font-variant: var(--tex8web-part-variant, normal);
+    text-align: var(--tex8web-part-align, left);
+    --tex8web-head-before: var(--tex8web-part-before, var(--tex8web-chapter-before, 0.67em));
+    margin-block: var(--tex8web-head-before)
+        var(--tex8web-part-after, var(--tex8web-chapter-after, 0.67em)); }
+/* (html4.4ht's h1.partHead{text-align: center}, but under the alignment
+   read from the class or titlesec, and for \part* too) */
+h1:is(.partHead, .likepartHead) { text-align: var(--tex8web-part-align, center); }
+:where(.chapterHead, .likechapterHead, .appendixHead) {
+    font-variant: var(--tex8web-chapter-variant, normal);
+    text-align: var(--tex8web-chapter-align, left);
+    --tex8web-head-before: var(--tex8web-chapter-before, 0.83em);
+    margin-block: var(--tex8web-head-before) var(--tex8web-chapter-after, 0.83em); }
+:where(.sectionHead, .likesectionHead) { font-variant: var(--tex8web-section-variant, normal);
+    text-align: var(--tex8web-section-align, left);
+    --tex8web-head-before: var(--tex8web-section-before, 1em);
+    margin-block: var(--tex8web-head-before) var(--tex8web-section-after, 1em); }
+:where(.subsectionHead, .likesubsectionHead) { font-variant: var(--tex8web-subsection-variant, normal);
+    text-align: var(--tex8web-subsection-align, left);
+    --tex8web-head-before: var(--tex8web-subsection-before, 1.33em);
+    margin-block: var(--tex8web-head-before) var(--tex8web-subsection-after, 1.33em); }
+:where(.subsubsectionHead, .likesubsubsectionHead) {
+    font-variant: var(--tex8web-subsubsection-variant, normal);
+    text-align: var(--tex8web-subsubsection-align, left);
+    --tex8web-head-before: var(--tex8web-subsubsection-before, 1.67em);
+    margin-block: var(--tex8web-head-before) var(--tex8web-subsubsection-after, 1.67em); }
+/* a theorem or list right under a heading: only the heading's space, as
+   LaTeX's \@item adds no \topsep after a heading (\if@nobreak). !important
+   outweighs a theorem's inline margin from text.lua, which also removes
+   the empty paragraph before a list there */
+:is(.sectionHead, .likesectionHead, .subsectionHead, .likesubsectionHead, .subsubsectionHead,
+    .likesubsubsectionHead) + :is(div.newtheorem, .tex8web-list, dl.description,
+    dl.thebibliography) { margin-top: 0 !important; }
+/* (run into their paragraph, unless titlesec puts them on a separate line,
+   by default with a paragraph's space below) */
+.paragraphHead, .likeparagraphHead { display: var(--tex8web-paragraph-display, inline);
+    margin: var(--tex8web-paragraph-before, 0) 0 var(--tex8web-paragraph-after, 1em);
+    font-size: var(--tex8web-paragraph-size);
+    font-family: var(--tex8web-paragraph-family, inherit);
+    font-weight: var(--tex8web-paragraph-weight, bold);
+    font-style: var(--tex8web-paragraph-style, normal);
+    font-variant: var(--tex8web-paragraph-variant, normal);
+    text-align: var(--tex8web-paragraph-align, left); }
+.subparagraphHead, .likesubparagraphHead { display: var(--tex8web-subparagraph-display, inline);
+    margin: var(--tex8web-subparagraph-before, 0) 0 var(--tex8web-subparagraph-after, 1em);
+    font-size: var(--tex8web-subparagraph-size);
+    font-family: var(--tex8web-subparagraph-family, inherit);
+    font-weight: var(--tex8web-subparagraph-weight, bold);
+    font-style: var(--tex8web-subparagraph-style, normal);
+    font-variant: var(--tex8web-subparagraph-variant, normal);
+    text-align: var(--tex8web-subparagraph-align, left); }
+/* the space between a heading's number and title (text.label_space), as
+   wide as in the PDF, by default LaTeX's \quad. It stays a space character
+   for copying and finding the heading */
+.tex8web-labelsep { display: inline-block; white-space: pre; }
+.sectionHead .tex8web-labelsep { width: var(--tex8web-section-labelsep, 1em); }
+.subsectionHead .tex8web-labelsep { width: var(--tex8web-subsection-labelsep, 1em); }
+.subsubsectionHead .tex8web-labelsep { width: var(--tex8web-subsubsection-labelsep, 1em); }
+.paragraphHead .tex8web-labelsep { width: var(--tex8web-paragraph-labelsep, 1em); }
+.subparagraphHead .tex8web-labelsep { width: var(--tex8web-subparagraph-labelsep, 1em); }
+/* a column as wide as the PDF's in ems of the text, so that lines hold
+   about as much, or the screen's width when narrower. The top margin
+   clears the controls (page.lua), at the same height on any screen. The
+   side padding is the gutter of a narrow screen, set on every screen:
+   Chrome does not keep the reader's place (scroll anchoring) across a
+   resize that changes the body's margin or padding */
+html body { max-width: var(--tex8web-textwidth); padding-inline: 1.25rem;
+    margin-block-start: 4rem; margin-block-end: 4em; }
+/* display math with \abovedisplayskip above and \belowdisplayskip below
+   (tex8web-math.tex), less MathJax's padding, which keeps the ink of a
+   display that scrolls from being cut off. (This selector outweighs MathJax's,
+   whose stylesheet comes later) */
+:is(.mathjax-block, .mathjax-env) > mjx-container[display] {
+    margin-block: calc(var(--tex8web-display-above) - 0.3em) calc(var(--tex8web-display-below) - 0.3em); }
+/* \intertext (tex8web-math.tex): the margins of the displays around it
+   give \belowdisplayskip above the text and \abovedisplayskip below, as
+   amsmath does */
+.tex8web-intertext { display: block; margin-block: 0; }
+/* pictures no wider than the column. A picture in display math
+   (\[ \begin{tikzcd} .. \]) has the space of display math */
+img { max-width: 100%; height: auto; }
+/* a \rule in text (tex8web-text.tex), no wider than the column, also after
+   a paragraph's indent. Its height is a border in the text color, as a
+   border is printed and kept in forced colors, where a background is not */
+.tex8web-rule { display: inline-block; max-width: 100%; height: 0;
+    width: calc(var(--tex8web-textwidth) * var(--tex8web-rule-width));
+    border-block-start: var(--tex8web-rule-height) solid;
+    vertical-align: var(--tex8web-rule-raise); }
+p.indent > .tex8web-rule:first-child { max-width: calc(100% - var(--tex8web-parindent, 0px)); }
+/* floats with \intextsep around them (tex8web-text.tex), with a table
+   float's inner figure.float holding no margin of its own. Two floats in a
+   row are \floatsep apart, as the PDF stacks floats at the top of a page.
+   Margins collapse to the larger, so the first float of two has none
+   below. A float is a block formatting context, so that a caption's margin
+   at its top or bottom adds to the float's, as in TeX */
+:is(figure.figure, div.table) { margin-block: var(--tex8web-intextsep); }
+:is(figure.figure, div.table) + :is(figure.figure, div.table) { margin-top: var(--tex8web-floatsep); }
+:is(figure.figure, div.table):has(+ :is(figure.figure, div.table)) { margin-bottom: 0; }
+div.table > figure.float { margin-block: 0; }
+:is(figure.figure, figure.float) { display: flow-root; }
+/* (tex4ht's div + p would add to the float's margin) */
+div.table + p { margin-top: 0; }
+/* center, flushleft, flushright, and verbatim with \topsep between them
+   and a paragraph or another of them, as a list has. With \WebLikePDF the
+   paragraph space is added, as \trivlist adds \parskip. The same holds
+   when a paragraph's footnote comes between. A tabular after one starts a
+   paragraph, so it has the same space. As with tex4ht's p + div, the space
+   is set between siblings: a block's own margins would stay inside a list
+   item, a box, or a float, where TeX sets no space at the edges */
+:is(div.center, div.flushleft, div.flushright, pre.verbatim) { margin-block: 0; }
+:is(p, div.center, div.flushleft, div.flushright, pre.verbatim) + :is(div.center, div.flushleft, div.flushright, pre.verbatim),
+:where(p + .tex8web-sidenote, .tex8web-sidenote + .tex8web-sidenote) + :is(div.center, div.flushleft, div.flushright, pre.verbatim),
+:is(div.center, div.flushleft, div.flushright, pre.verbatim) + :is(p, div.tabular) {
+    margin-top: calc(var(--tex8web-list-sep) + var(--tex8web-parskip, 0em)); }
+/* (browsers indent a <figure>; LaTeX does not indent floats) */
+figure { margin-inline: 0; }
+/* a caption as LaTeX's \@makecaption sets it: centered while it fits on a
+   line, else a paragraph as wide as the text. The label is in the
+   caption's font: html4.4ht makes it bold, and caption's labelfont=bf
+   already adds a bold span */
+:is(figcaption, div).caption { width: fit-content; margin-inline: auto; text-align: start;
+    text-indent: 0; }
+/* the caption skips of \@makecaption (tex8web-text.tex), in place of
+   tex4ht's margins */
+:is(figcaption, div).caption {
+    margin-block: var(--tex8web-caption-before) var(--tex8web-caption-after); }
+:is(figcaption, div).caption span.id { font-weight: normal; }
+/* float.sty's ruled style, used by algorithm's floats, and algorithm2e's
+   (tex8web-text.tex): the caption at the top left wherever \caption is,
+   between two rules, and a third rule at the end. Each rule is 2pt from
+   the text, as in float.sty. In algorithm2e, the rules around the caption
+   are \interspacetitleruled away, the others \interspacealgoruled */
+:is(figure.tex8web-float-ruled, .tex8web-a2e-ruled, .tex8web-a2e-algoruled) {
+    display: flex; flex-direction: column;
+    padding-block-end: var(--tex8web-float-bodysep);
+    border-block: var(--tex8web-float-endrule) solid;
+    border-top-width: var(--tex8web-float-rule); }
+:is(.tex8web-float-ruled, .tex8web-a2e-ruled, .tex8web-a2e-algoruled) > figcaption {
+    order: -1; width: auto; margin: 0 0 var(--tex8web-float-bodysep);
+    padding-block: var(--tex8web-float-sep);
+    border-bottom: var(--tex8web-float-midrule) solid; }
+.tex8web-float-ruled > figcaption span.id { font-weight: bold; }
+/* minipages and subfigures side by side while the column has room, each
+   as wide as in the PDF (--tex8web-share of the text, tex8web-text.tex),
+   aligned by its [t], [c], or [b]. They are spread as by \hfill, or evenly
+   in a figure, which tex4ht centers as \centering does. tex4ht's own
+   subfigure rule (at most 45%, with a margin) is not used. In a column
+   narrower than the text, as on a phone, they wrap, and one alone on its
+   line grows to the column's width: (text width + the body's padding there
+   - 100vw) is then positive */
+.tex8web-minipages { display: flex; flex-wrap: wrap; justify-content: space-between;
+    align-items: center; row-gap: 1em; }
+figure .tex8web-minipages { justify-content: space-evenly; }
+.tex8web-minipages > div { --tex8web-width: calc(var(--tex8web-textwidth) * var(--tex8web-share));
+    width: var(--tex8web-width); flex-grow: 1; margin: 0;
+    max-width: min(100%, max(var(--tex8web-width),
+        (var(--tex8web-textwidth) + 2.5rem - 100vw) * 1000)); }
+.tex8web-minipages > .tex8web-minipage-t { align-self: baseline; }
+.tex8web-minipages > .tex8web-minipage-b { align-self: last baseline; }
+.mathjax-block img { display: block; margin: var(--tex8web-display-above) auto var(--tex8web-display-below); }
+/* a formula in resized text at the text's size (tex8web-math.tex) */
+:is(.mathjax-inline, .mathjax-block, .mathjax-env) { font-size: calc(var(--tex8web-math-size, 1) * 1em); }
+/* a table where it sits in the PDF, as its class says (tex8web-text.tex),
+   in place of html4.4ht's centering of every tabular and longtable.
+   html4.4ht also puts 0.5em around a tabular. Here a tabular in a
+   paragraph is spaced as a <p> is, by tex4ht's p + div, div + p, and p +
+   figcaption, and one in a cell has no space around it, as in the PDF. The
+   space after it gives way to the next element's own margin */
+div.tabular, div.center div.tabular { text-align: inherit; margin-block: 0; }
+div + div.tabular { margin-top: 1em; }
+:where(div.tabular + :is(div, figcaption)) { margin-top: 1em; }
+:is(p, div.tabular) + div.tabular, div.tabular + p { margin-top: var(--tex8web-parskip, 1em); }
+table.tabular, table.longtable { margin-inline: 0; }
+table.tex8web-indent { margin-inline-start: var(--tex8web-parindent, 0); }
+table.tex8web-center { margin-inline: auto; }
+table.tex8web-right { margin-inline-start: auto; }
+table.tex8web-inline { display: inline-table; vertical-align: middle; }
+/* the space of a \\[len] below a row, or after the author's line */
+.tex8web-rowskip { height: var(--tex8web-rowskip); }
+span.tex8web-rowskip { display: block; }
+tr.tex8web-rowskip td { padding: 0; line-height: 0; }
+/* a tabular or verbatim too wide for a narrow screen scrolls sideways, as
+   a wide display does, so that the page does not widen */
+@media not (min-width: 79.00em) { div.tabular, pre { overflow-x: auto; } }
+/* a box that scrolls sideways fades out at each edge where more of it is
+   hidden. Each edge has a separate mask, a fade from that edge, shifted
+   out of the box while less than --tex8web-edge is hidden beyond it, so
+   that the fade shortens as the end nears. tex8web-page.js marks the box
+   and sets how much is hidden on each side. CSS scroll timelines could do
+   this without JavaScript, but Safari then restyled the page on every
+   frame of scrolling. The amounts are not inherited, so that setting them
+   restyles one element and not the math inside it. A mask would hide the
+   keyboard focus ring, so the ring replaces the fade */
+:root { --tex8web-edge: 2.5em; }
+@property --tex8web-hidden-left { syntax: '<length>'; inherits: false; initial-value: 0px; }
+@property --tex8web-hidden-right { syntax: '<length>'; inherits: false; initial-value: 0px; }
+.tex8web-scrolls {
+    mask-image: linear-gradient(to right, transparent, #000 var(--tex8web-edge)),
+        linear-gradient(to left, transparent, #000 var(--tex8web-edge));
+    mask-size: calc(100% + var(--tex8web-edge)) 100%; mask-repeat: no-repeat; mask-composite: intersect;
+    mask-position: calc(min(var(--tex8web-hidden-left), var(--tex8web-edge)) - var(--tex8web-edge)) 0,
+        calc(-1 * min(var(--tex8web-hidden-right), var(--tex8web-edge))) 0; }
+.tex8web-scrolls:focus-visible { mask-image: none; }
+/* MathJax clips each character to its box, to hide the tall line box of
+   its ZERO font, which only a selection shows (output/chtml.ts). Safari
+   gives each clipped element a layer, and painting a long page during
+   scrolling takes several times as long. (mjx-container outweighs
+   MathJax's selector, whose stylesheet comes later) */
+mjx-container :is(mjx-mo, mjx-mi, mjx-mn, mjx-ms, mjx-mtext) > mjx-c { clip-path: none; }
+/* the picture viewer (tex8web-page.js): the picture as large as the
+   screen allows with a margin (4% of the screen's shorter side, at least
+   1rem) and 0.5rem of padding, or zoomed from half to 4 times that,
+   padding included (--tex8web-zoom, plus a transform from tex8web-page.js
+   until it lays the picture out again). A cover over the page darkens and
+   slightly blurs it. The page's background is on the plate around the
+   picture, which TikZ and transparent pictures need, because on the img
+   the dark mode filter for TikZ would invert it. A copy in a preview card
+   does not open the viewer */
+.tex8web-zoomable:not(.tex8web-preview *) { cursor: zoom-in; }
+.tex8web-viewer { inset: 0; width: auto; height: auto; margin: 0; padding: 0; border: 0;
+    overflow: hidden; color: inherit; background-color: rgb(0 0 0 / 0.6);
+    /* (the blur keeps the text behind the cover from being read through
+       it) */
+    backdrop-filter: blur(3px); touch-action: none; -webkit-user-select: none; user-select: none; }
+/* (the viewer takes focus on opening, for the keyboard; a ring around the
+   whole screen would carry no information) */
+.tex8web-viewer:focus { outline: none; }
+.tex8web-plate { --tex8web-room: calc(2 * max(1rem, 4vmin) + 1rem);
+    --tex8web-fit: min(100vw - var(--tex8web-room),
+        (100dvh - var(--tex8web-room)) * var(--tex8web-ratio));
+    position: absolute; top: 0; left: 0; padding: calc(0.5rem * var(--tex8web-zoom, 1));
+    background-color: var(--tex8web-bg); transform-origin: 0 0; }
+.tex8web-plate img { display: block; width: calc(var(--tex8web-fit) * var(--tex8web-zoom, 1));
+    max-width: none; cursor: grab; -webkit-touch-callout: none; }
+.tex8web-viewer.tex8web-dragging img { cursor: grabbing; }
+/* (the page does not scroll behind the viewer, and keeps its scroll bar's
+   room) */
+:root:has(.tex8web-viewer:popover-open) { overflow: hidden; scrollbar-gutter: stable; }
+@media (prefers-reduced-motion: no-preference) {
+    /* (on closing, tex8web-page.js fades the viewer out, then hides it:
+       Safari on iOS does not fade a popover out as it hides) */
+    .tex8web-viewer { transition: opacity var(--tex8web-fade); }
+    .tex8web-viewer.tex8web-closing { opacity: 0; }
+    @starting-style { .tex8web-viewer:popover-open { opacity: 0; } }
+    /* (a double-click's zoom, in one motion; shorter than faded() in
+       tex8web-page.js, after which the picture is laid out again) */
+    .tex8web-plate.tex8web-easing { transition: transform calc(1.5 * var(--tex8web-fade)); }
+}
+
+/* --- boxes ------------------------------------------------------------- */
+
+/* tcolorbox: a frame of rules, or a borderline in a rule's place, and the
+   title on a separate background. A boxed title is a tab at the top, and
+   the title of attach title to upper starts the text. tex8web-boxes.tex
+   sets these on each box, by its id:
+   - colors: --tcb-frame, --tcb-back, --tcb-text, --tcb-title-text,
+     --tcb-title-back, and for a boxed title --tcb-title-frame
+   - lengths: --tcb-rule-top (-right, -bottom, -left), --tcb-padding
+     (and --tcb-padding-left), --tcb-middle (the space on each side of
+     the line before the lower part), --tcb-radius, --tcb-title-padding
+     (and --tcb-title-padding-left), and for a boxed title
+     --tcb-title-rule-top (...) and --tcb-title-radius
+   - only where the box has them, and reset here so that a nested box
+     does not inherit them: --tcb-line-top (...: a borderline),
+     --tcb-before, --tcb-after, --tcb-shadow, and --tcb-title-shadow */
+.tcolorbox { --tcb-line-top: initial; --tcb-line-right: initial; --tcb-line-bottom: initial;
+    --tcb-line-left: initial; --tcb-before: initial; --tcb-after: initial;
+    --tcb-shadow: none; --tcb-title-shadow: none;
+    margin-block: var(--tcb-before, 0.5em) var(--tcb-after, 0.5em);
+    color: var(--tcb-text); background-color: var(--tcb-back);
+    border-top: var(--tcb-line-top, var(--tcb-rule-top) solid var(--tcb-frame));
+    border-right: var(--tcb-line-right, var(--tcb-rule-right) solid var(--tcb-frame));
+    border-bottom: var(--tcb-line-bottom, var(--tcb-rule-bottom) solid var(--tcb-frame));
+    border-left: var(--tcb-line-left, var(--tcb-rule-left) solid var(--tcb-frame));
+    border-radius: var(--tcb-radius); box-shadow: var(--tcb-shadow); overflow: clip; }
+.tcolorbox-title { color: var(--tcb-title-text); background-color: var(--tcb-title-back);
+    padding: var(--tcb-title-padding); }
+.tcolorbox-title p { margin: 0; text-indent: 0; }
+.tcolorbox-content { padding: var(--tcb-padding); display: flow-root; }
+.tcolorbox .lowerbox { display: flow-root; margin-top: var(--tcb-middle);
+    padding-top: var(--tcb-middle); border-top: 1px dashed var(--tcb-frame); }
+[class*="tex8web-tcb-boxed-"] > .tcolorbox-title { width: fit-content;
+    border-style: solid; border-color: var(--tcb-title-frame);
+    border-width: var(--tcb-title-rule-top) var(--tcb-title-rule-right)
+        var(--tcb-title-rule-bottom) var(--tcb-title-rule-left);
+    border-radius: var(--tcb-title-radius); box-shadow: var(--tcb-title-shadow); }
+.tex8web-tcb-boxed-center > .tcolorbox-title { margin-inline: auto; }
+.tex8web-tcb-boxed-right > .tcolorbox-title { margin-inline-start: auto; }
+.tex8web-tcb-inline > .tcolorbox-title { float: left; background-color: transparent;
+    padding: var(--tcb-padding); padding-inline-end: 0; }
+/* (the text wraps around the title) */
+.tex8web-tcb-inline > .tcolorbox-content { display: block; }
+/* a proof's QED box at the right of its last line, as amsthm's \hfill
+   puts it, a quad from the text, or on the line below if the last line has
+   no room. Its paragraph, or its block after a list, is a flow root, so
+   that a box alone on a line after a display stays inside */
+.tex8web-qed { float: right; float: inline-end; margin-inline-start: 1em; }
+p:has(> .tex8web-qed), .tex8web-qed-line { display: flow-root; }
+/* a \tcbox inline (tex8web-boxes.tex), on the text's baseline */
+span.tcolorbox { display: inline-block; margin-block: 0; vertical-align: baseline; }
+span.tcolorbox > .tcolorbox-title { display: block; }
+/* the text after an \hfill (tex8web-text.tex), at the right of its line
+   as in the PDF, or on the line below if the line has no room. Text longer
+   than a line starts on the line below, at the left, as the PDF's later
+   lines do, so its quad from the text is a span before it, not a margin.
+   Its line (text.hfill) is a flow root, as the QED box's paragraph is. So
+   is a paragraph, heading, or caption holding one, for a line in a link or
+   a color, or in a heading or caption */
+.tex8web-hfill { float: right; float: inline-end; text-indent: 0; }
+.tex8web-hfill-gap { padding-inline-end: 1em; }
+.tex8web-hfill-line { display: flow-root; }
+.tex8web-hfill-line:not(:first-child) { text-indent: 0; }
+:is(p, h1, h2, h3, h4, h5, h6, .caption):has(.tex8web-hfill) { display: flow-root; }
+/* (\hfill outstretches the fill of \centering and \raggedleft, so the
+   line starts at the left. This applies in a center or flushright
+   environment and in a figure, which tex4ht centers, to the line alone,
+   or to the paragraph when text.hfill made no line; and in a centered
+   heading) */
+:is(div.center, div.flushright, figure) :is(.tex8web-hfill-line, p:has(.tex8web-hfill):not(:has(.tex8web-hfill-line))),
+:is(h1, h2, h3, h4, h5, h6):has(.tex8web-hfill) { text-align: start; }
+/* mdframed (tex8web-text.tex): rules, inner space, and outer space from
+   the box's options, with no extra space inside at the top and bottom, as
+   in the PDF. !important outweighs a theorem's inline margin from
+   text.lua */
+.mdframed { display: flow-root; margin: var(--tex8web-mdf-margin);
+    border-style: solid; border-width: var(--tex8web-mdf-rules);
+    padding: var(--tex8web-mdf-padding); }
+.mdframed > :first-child { margin-top: 0 !important; }
+.mdframed > :last-child { margin-bottom: 0 !important; }
+/* \fbox, \framebox, \colorbox, and \fcolorbox: \fboxsep inside on each
+   side, and \fboxrule for the frame (tex8web-text.tex). A box in a line is
+   a block in that line, as TeX's box is, so the line makes room for the
+   box, and a \framebox has its width. The paragraph's indent stays outside
+   the box */
+:is(span.fbox, span.colorbox, .framebox-c, .framebox-l, .framebox-r) { display: inline-block;
+    text-indent: 0; }
+.fbox, div.center div.fbox, .framebox-c, .framebox-l, .framebox-r, .colorbox, div.colorbox {
+    padding: var(--tex8web-fboxsep); }
+.fbox, div.center div.fbox, .framebox-c, .framebox-l, .framebox-r {
+    border-width: var(--tex8web-fboxrule); }
+/* (a \framebox's width includes its \fboxsep and \fboxrule, as in
+   latex.ltx's \@iframebox, and is at most the text's) */
+:is(.framebox-c, .framebox-l, .framebox-r) { box-sizing: border-box; max-width: 100%; }
+/* a table cell's space at each side, \tabcolsep (tex8web-text.tex): at the
+   left of td10, at the right of td01 */
+td.td11 { padding-inline: var(--tex8web-tabcolsep); }
+td.td10 { padding-left: var(--tex8web-tabcolsep); }
+td.td01 { padding-right: var(--tex8web-tabcolsep); }
+/* framed, as far from the text as in the PDF (tex8web-text.tex). Under a
+   titlesec heading, the sum of this space and the heading's space below,
+   not the larger: titlesec adds its space with \vspace, which ends in
+   \vskip\z@skip (source2e), so framed's \addvspace adds to it */
+.framedenv { margin-block: var(--tex8web-framed-sep); }
+:is(.chapterHead, .likechapterHead, .appendixHead) + .framedenv {
+    margin-top: calc(var(--tex8web-chapter-after-text, 0em) + var(--tex8web-framed-sep)); }
+:is(.sectionHead, .likesectionHead) + .framedenv {
+    margin-top: calc(var(--tex8web-section-after-text, 0em) + var(--tex8web-framed-sep)); }
+:is(.subsectionHead, .likesubsectionHead) + .framedenv {
+    margin-top: calc(var(--tex8web-subsection-after-text, 0em) + var(--tex8web-framed-sep)); }
+:is(.subsubsectionHead, .likesubsubsectionHead) + .framedenv {
+    margin-top: calc(var(--tex8web-subsubsection-after-text, 0em) + var(--tex8web-framed-sep)); }
+
+/* --- table of contents ------------------------------------------------- */
+
+/* one entry per line, in place of tex4ht's <br />, with a wrapped title's
+   lines aligned under its first. Half the PDF's space above each entry,
+   for a narrow column or drawer (page.lua). Numbers in a box as wide as in
+   the PDF, so that titles line up for one-digit and two-digit numbers */
+.tableofcontents > span { display: flex; }
+.tableofcontents > br { display: none; }
+/* undone from html4.4ht: a chapter's double line height, for the space
+   above it; a part's size on both the entry and its link, which makes the
+   title larger than the number; and bold links, which keep a title bold
+   when tocloft's font is not. Lengths from TeX are in the text's ems, so
+   they are divided by the entry's size, a multiple of the text's */
+.chapterToc, .likechapterToc, .appendixToc {
+    margin-top: calc(var(--tex8web-toc-chapter-skip) / 2 / var(--tex8web-toc-scale)); }
+:is(.chapterToc, .likechapterToc, .appendixToc), :is(.chapterToc, .likechapterToc, .appendixToc) a {
+    line-height: inherit; }
+:is(.partToc, .likepartToc) a { font-size: inherit; }
+:is(.partToc, .likepartToc, .chapterToc, .likechapterToc, .appendixToc) a { font-weight: inherit; }
+.sectionToc, .likesectionToc { margin-top: calc(var(--tex8web-toc-section-skip) / 2 / var(--tex8web-toc-scale)); }
+.subsectionToc, .likesubsectionToc {
+    margin-top: calc(var(--tex8web-toc-subsection-skip) / 2 / var(--tex8web-toc-scale)); }
+:is(.chapterToc, .appendixToc) .tocnumber {
+    min-width: calc(var(--tex8web-toc-chapter-number) / var(--tex8web-toc-scale)); }
+.sectionToc { margin-left: calc(var(--tex8web-toc-section-indent, 0em) / var(--tex8web-toc-scale)); }
+.sectionToc .tocnumber { min-width: calc(var(--tex8web-toc-section-number) / var(--tex8web-toc-scale)); }
+.subsectionToc { margin-left: calc(var(--tex8web-toc-subsection-indent) / var(--tex8web-toc-scale)); }
+.subsectionToc .tocnumber { min-width: calc(var(--tex8web-toc-subsection-number) / var(--tex8web-toc-scale)); }
+.subsubsectionToc { margin-left: calc(var(--tex8web-toc-subsubsection-indent) / var(--tex8web-toc-scale)); }
+.subsubsectionToc .tocnumber { min-width: calc(var(--tex8web-toc-subsubsection-number) / var(--tex8web-toc-scale)); }
+.paragraphToc { margin-left: calc(var(--tex8web-toc-paragraph-indent) / var(--tex8web-toc-scale)); }
+.paragraphToc .tocnumber { min-width: calc(var(--tex8web-toc-paragraph-number) / var(--tex8web-toc-scale)); }
+.subparagraphToc { margin-left: calc(var(--tex8web-toc-subparagraph-indent) / var(--tex8web-toc-scale)); }
+.subparagraphToc .tocnumber { min-width: calc(var(--tex8web-toc-subparagraph-number) / var(--tex8web-toc-scale)); }
+/* each level's font: tocloft's, else html4.4ht's (bold parts at 110%,
+   bold chapters) */
+.partToc, .likepartToc {
+    --tex8web-toc-scale: var(--tex8web-toc-part-size, 1.1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-part-family);
+    font-weight: var(--tex8web-toc-part-weight, bold);
+    font-style: var(--tex8web-toc-part-style);
+    font-variant: var(--tex8web-toc-part-variant); }
+.chapterToc, .likechapterToc, .appendixToc {
+    --tex8web-toc-scale: var(--tex8web-toc-chapter-size, 1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-chapter-family);
+    font-weight: var(--tex8web-toc-chapter-weight, bold);
+    font-style: var(--tex8web-toc-chapter-style);
+    font-variant: var(--tex8web-toc-chapter-variant); }
+.sectionToc, .likesectionToc {
+    --tex8web-toc-scale: var(--tex8web-toc-section-size, 1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-section-family);
+    font-weight: var(--tex8web-toc-section-weight, normal);
+    font-style: var(--tex8web-toc-section-style);
+    font-variant: var(--tex8web-toc-section-variant); }
+.subsectionToc, .likesubsectionToc {
+    --tex8web-toc-scale: var(--tex8web-toc-subsection-size, 1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-subsection-family);
+    font-weight: var(--tex8web-toc-subsection-weight);
+    font-style: var(--tex8web-toc-subsection-style);
+    font-variant: var(--tex8web-toc-subsection-variant); }
+.subsubsectionToc, .likesubsubsectionToc {
+    --tex8web-toc-scale: var(--tex8web-toc-subsubsection-size, 1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-subsubsection-family);
+    font-weight: var(--tex8web-toc-subsubsection-weight);
+    font-style: var(--tex8web-toc-subsubsection-style);
+    font-variant: var(--tex8web-toc-subsubsection-variant); }
+.paragraphToc, .likeparagraphToc {
+    --tex8web-toc-scale: var(--tex8web-toc-paragraph-size, 1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-paragraph-family);
+    font-weight: var(--tex8web-toc-paragraph-weight);
+    font-style: var(--tex8web-toc-paragraph-style);
+    font-variant: var(--tex8web-toc-paragraph-variant); }
+.subparagraphToc, .likesubparagraphToc {
+    --tex8web-toc-scale: var(--tex8web-toc-subparagraph-size, 1);
+    font-size: calc(var(--tex8web-toc-scale) * 1em);
+    font-family: var(--tex8web-toc-subparagraph-family);
+    font-weight: var(--tex8web-toc-subparagraph-weight);
+    font-style: var(--tex8web-toc-subparagraph-style);
+    font-variant: var(--tex8web-toc-subparagraph-variant); }
+.tocnumber { display: inline-block; }
+/* (an entry without a number starts where the number would, as in the
+   PDF) */
+.tocnumber:empty { display: none; }
+
+/* --- lists ------------------------------------------------------------- */
+
+/* lists as LaTeX sets them, with each list's lengths (tex8web-text.tex).
+   An item, an li or a div in a dl, is a grid of its label (first child)
+   and text (last child). The label is on one line, as in TeX's box,
+   right-aligned \labelsep before the text, and sticks out to the left if
+   wider than its column. The label is on the baseline of the text's first
+   line, as in LaTeX. This holds also where the text's leading differs
+   from the label's, as in a footnote, and puts the label at the bottom of
+   a picture that starts the text. Before a display that starts the text,
+   the label is at the top, as LaTeX sets it on an empty line above the
+   display (page.lua). minmax keeps the text within its column, so that a
+   display too wide for it scrolls and the page does not widen */
+.tex8web-list { margin-block: var(--tex8web-list-topsep); padding: 0; }
+.tex8web-list > * { display: grid; align-items: baseline;
+    column-gap: var(--tex8web-list-labelsep);
+    grid-template-columns: calc(var(--tex8web-list-indent) - var(--tex8web-list-labelsep))
+        minmax(0, 1fr); }
+.tex8web-list > * + * { margin-top: var(--tex8web-list-itemsep); }
+.tex8web-list > * > :first-child { justify-self: end; white-space: nowrap; }
+.tex8web-list > :has(> :last-child > p:first-child > .tex8web-display-start) > :first-child {
+    align-self: start; }
+.tex8web-list > * > :last-child { margin-left: 0; }
+/* (LaTeX uses the larger of a nested list's space below and the next
+   item's space) */
+.tex8web-list > * > :last-child > .tex8web-list:last-child { margin-bottom: 0; }
+/* algorithmicx lines (tex8web-text.tex), each indented by its block's
+   depth, and lines without text hidden. A label wider than its column,
+   for example Require:, pushes the text over, as in a LaTeX list */
+.algorithmic > * { grid-template-columns:
+    minmax(calc(var(--tex8web-list-indent) - var(--tex8web-list-labelsep)), max-content)
+    minmax(0, 1fr); }
+.algorithmic > * > :last-child { display: flow-root;
+    padding-inline-start: var(--tex8web-alg-indent); }
+.algorithmic > .tex8web-alg-notext { display: none; }
+/* algorithm2e (tex8web-text.tex): lines \algomargin in from the caption's
+   \AlCapHSkip, with a hanging indent. A block is \skiprule in, its text
+   \skiptext from its vertical line, which ends in a short rule (vlined).
+   A line number ends \skiptotal before the text's margin, or is at the
+   right, 1.2em + \skiptext - \algomargin from the algorithm's right
+   edge, in the 1.5em that algorithm2e keeps there for numbers */
+.tex8web-a2e { position: relative; display: flex; flex-direction: column;
+    margin-block: 1em; text-align: start; }
+.tex8web-a2e > figcaption { width: auto; margin: 0;
+    padding-inline-start: var(--tex8web-a2e-caption); }
+/* the caption of plain, boxed, and plainruled, as \algocf@makecaption sets
+   it: centered over the text less those 1.5em, and less \algomargin in
+   boxed, or from 0.5\algomargin if longer than a line */
+.tex8web-a2e:is(.tex8web-a2e-plain, .tex8web-a2e-boxed, .tex8web-a2e-plainruled) > figcaption {
+    width: fit-content; margin-inline: auto;
+    padding-inline: calc(var(--tex8web-a2e-margin) / 2) calc(var(--tex8web-a2e-margin) / 2 + 1.5em); }
+.tex8web-a2e.tex8web-a2e-boxed > figcaption {
+    padding-inline-end: calc(var(--tex8web-a2e-margin) * 1.5 + 1.5em); }
+/* \noalgocaption: the caption is not shown, but is kept as a link's
+   target, and the text is \interspacetitleruled below the rule */
+.tex8web-a2e-caption-none > figcaption { visibility: hidden; height: 0;
+    margin: 0 0 var(--tex8web-float-sep); padding: 0; border: 0; }
+.tex8web-a2e-caption-top > figcaption, .tex8web-a2e-caption-above > figcaption { order: -1; }
+.tex8web-a2e-caption-bottom > figcaption, .tex8web-a2e-caption-under > figcaption { order: 1; }
+.tex8web-a2e > :not(figcaption) { margin-inline-start: var(--tex8web-a2e-margin); }
+.tex8web-a2e:has(.tex8web-a2e-nl-right) > :not(figcaption) { margin-inline-end: 1.5em; }
+.tex8web-a2e > .tex8web-a2e-block {
+    margin-inline-start: calc(var(--tex8web-a2e-margin) + var(--tex8web-a2e-rule)); }
+.tex8web-a2e :is(p, div) { margin-block: 0; }
+.tex8web-a2e p { text-indent: calc(-1 * var(--tex8web-a2e-hang));
+    padding-inline-start: var(--tex8web-a2e-hang); }
+.tex8web-a2e-block { margin-inline-start: var(--tex8web-a2e-rule);
+    padding-inline-start: var(--tex8web-a2e-text); }
+.tex8web-a2e-vline { border-inline-start: var(--tex8web-a2e-vrule) solid; }
+.tex8web-a2e-hook::after { content: ""; display: block; width: 0.5em;
+    margin-inline-start: calc(-1 * var(--tex8web-a2e-text));
+    margin-block-end: var(--tex8web-a2e-hook);
+    border-top: var(--tex8web-a2e-vrule) solid; }
+.tex8web-a2e-nl { position: absolute; inset-inline-start: 0; text-indent: 0;
+    width: calc(var(--tex8web-a2e-margin) - var(--tex8web-a2e-nlsep)); text-align: end; }
+.tex8web-a2e-nl.tex8web-a2e-nl-right { width: auto;
+    inset-inline: auto calc(1.2em + var(--tex8web-a2e-text) - var(--tex8web-a2e-margin)); }
+/* (an item copied into a preview by tex8web-page.js, without its list's
+   marker) */
+.tex8web-preview > li { list-style: none; }
+/* a description's term runs into its text, which is indented after its
+   first line. Spaced as a LaTeX list: \topsep around it, \itemsep and
+   \parsep between items */
+dl.description { margin-block: var(--tex8web-list-sep); padding-left: var(--tex8web-leftmargin); }
+dl.description > dt { float: left; clear: left; margin-right: var(--tex8web-list-labelsep);
+    margin-left: calc(-1 * var(--tex8web-leftmargin)); }
+dl.description > dd { margin-left: 0; margin-bottom: var(--tex8web-item-sep); }
+
+/* a bibliography as LaTeX's list sets it: labels right-aligned in a
+   column as wide as the widest, and entries spaced by the lengths on
+   the list (tex/tex8web-text.tex). The same for tex4ht's two forms: a
+   <dl> in a <section>, and biblatex's */
+:is(.thebibliography > dl, dl.thebibliography) { display: grid; grid-auto-flow: row;
+    grid-template-columns: max-content minmax(0, 1fr); column-gap: var(--tex8web-biblabelsep);
+    row-gap: var(--tex8web-bibitem-sep); }
+:is(.thebibliography > dl, dl.thebibliography) > dt { grid-column: 1; justify-self: end;
+    float: none; margin: 0; }
+:is(.thebibliography > dl, dl.thebibliography) > dd { grid-column: 2; margin: 0; }
+/* an author-year bibliography, whose entries have no labels: no space
+   after the empty label column, and each entry hangs, as LaTeX's list sets
+   it, by \leftmargin with its first line at \itemindent. The first <p> of
+   biblatex's entries had tex4ht's fixed hanging indent (html4.4ht) */
+:is(.thebibliography > dl, dl.thebibliography).tex8web-bibhang { column-gap: 0; }
+:is(.thebibliography > dl, dl.thebibliography).tex8web-bibhang > dd {
+    padding-left: var(--tex8web-bibhang); text-indent: var(--tex8web-bibitemindent); }
+:is(.thebibliography > dl, dl.thebibliography).tex8web-bibhang > dd > p:first-child { text-indent: inherit; }
+
+/* --- links to the page (page.lua) -------------------------------------- */
+
+/* a # in the margin of each heading, theorem, and box, shown on hover,
+   and faintly on touch screens */
+.tex8web-permalink { position: absolute; transform: translateX(-100%);
+    padding-inline-end: 0.3em; color: inherit; font-weight: normal; opacity: 0; }
+:is(h2, h3, h4, h5, h6, .newtheorem):hover .tex8web-permalink,
+    .tcolorbox:hover > .tcolorbox-title > .tex8web-permalink, .tex8web-permalink:focus { opacity: 0.4; }
+@media (hover: none) { .tex8web-permalink { opacity: 0.2; } }
+/* (a box's # in the text's color, also in the margin: shifted back past
+   the title's padding, the box's left rule, and a boxed title's rule. A
+   boxed title in the middle or at the right is not beside the box's rule,
+   so its # skips only the title's padding and rule. The box's overflow:
+   clip does not hide the #, as its containing block is outside the box) */
+@media (min-width: 79.00em) {
+    .tcolorbox-title > .tex8web-permalink { color: var(--tex8web-text);
+        margin-inline-start: calc(-1 * (var(--tcb-title-padding-left) + var(--tcb-rule-left))); }
+    [class*="tex8web-tcb-boxed-"] > .tcolorbox-title > .tex8web-permalink {
+        margin-inline-start: calc(-1 * (var(--tcb-title-padding-left) + var(--tcb-title-rule-left)
+            + var(--tcb-rule-left))); }
+    :is(.tex8web-tcb-boxed-center, .tex8web-tcb-boxed-right) > .tcolorbox-title > .tex8web-permalink {
+        margin-inline-start: calc(-1 * (var(--tcb-title-padding-left) + var(--tcb-title-rule-left))); }
+    .tex8web-tcb-inline > .tcolorbox-title > .tex8web-permalink {
+        margin-inline-start: calc(-1 * (var(--tcb-padding-left) + var(--tcb-rule-left))); }
+}
+/* a link's target: the highlight, and one em of the body text as space
+   above it. Above a heading, its space before if that is less, so that
+   nothing above the heading shows (--tex8web-head-before, above) */
+:root { --tex8web-text-em: calc(var(--tex8web-pdf-scale, 1) * 1rem); }
+:target { scroll-margin-top: var(--tex8web-text-em); }
+:is(h1, h2, h3, h4, h5, h6):target {
+    scroll-margin-top: min(var(--tex8web-head-before, var(--tex8web-text-em)), var(--tex8web-text-em)); }
+:is(h2, h3, h4, h5, h6, .paragraphHead, .likeparagraphHead, .subparagraphHead, .likesubparagraphHead,
+    .tex8web-term):target, .newtheorem:has(.head > a:target), .tcolorbox:has(> a:target) {
+    background-color: var(--tex8web-highlight); }
+/* an equation's anchors (marked in page.lua) come right before it, or for
+   a gather at the end of the paragraph before. The highlight goes on the
+   first display after them */
+a.tex8web-eq-anchor:target ~ :is(.mathjax-env, .mathjax-block):not(a.tex8web-eq-anchor:target ~ :not(a.tex8web-eq-anchor) ~ *) > mjx-container,
+p:has(> a.tex8web-eq-anchor-end:target) + :is(.mathjax-env, .mathjax-block) > mjx-container {
+    background-color: var(--tex8web-highlight); }
+
+/* --- controls and the table of contents (page.lua) -------------------- */
+
+/* @media (min-width: 79.00em): a screen with room beside the text for the
+   table of contents and footnotes, a column --tex8web-margin wide plus
+   twice --tex8web-gap on each side. assets.lua (wide_screens) computes the
+   width from these and the text width. --tex8web-layout tells
+   tex8web-page.js which layout applies. --tex8web-icons-inset and
+   --tex8web-column-inset place the icons and the table of contents column
+   on a wide screen, and where they fade out when the screen narrows.
+   --tex8web-fade is the duration of motion, read by tex8web-page.js */
+:root { --tex8web-margin: 14rem; --tex8web-gap: 1.5rem; --tex8web-fade: 0.2s;
+    --tex8web-icons-inset: calc(env(safe-area-inset-top, 0px) + 0.5rem) auto auto 0.75rem;
+    --tex8web-column-inset: 4rem auto 1rem 0.75rem;
+    --tex8web-layout: narrow; }
+@media (min-width: 79.00em) { :root { --tex8web-layout: wide; } }
+
+/* the controls: line icons at the top left, faint until hovered. On a
+   narrow screen, a bar across the top, which tex8web-page.js hides while
+   the reader scrolls down and shows on scrolling up. Its bottom line
+   shows only once the page has scrolled. In rems, as the table of contents and its column are, so
+   that \WebLikePDF's text size does not change them */
+.tex8web-controls { position: fixed; z-index: 10; inset: 0 0 auto; font-size: 1rem;
+    display: flex; gap: 0.125rem;
+    padding: calc(env(safe-area-inset-top, 0px) + 0.625rem) 0.875rem 0.625rem;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+    background-color: var(--tex8web-bg); }
+.tex8web-control { display: inline-flex; padding: 0.375rem; border: 0;
+    border-radius: 0.375rem; color: inherit; background: none; cursor: pointer;
+    opacity: 0.45; }
+.tex8web-control:hover, .tex8web-control:focus-visible { opacity: 1;
+    background-color: var(--tex8web-hover); }
+/* (the theme button needs tex8web-page.js, but tex8web-head.js's class
+   shows it: a long page is drawn well before the deferred tex8web-page.js
+   runs) */
+:root:not(.tex8web-js) .tex8web-theme { display: none; }
+/* (the section being read, on a narrow screen, from tex8web-page.js) */
+.tex8web-where { display: none; opacity: 0.6; }
+.tex8web-control svg { width: 1.25rem; height: 1.25rem; fill: none;
+    stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
+@media not (min-width: 79.00em) {
+    /* (room for the bar, 3.25rem and its line, above the keyboard focus,
+       and above a link's target without JavaScript. With it, the bar is
+       hidden after a link's jump (tex8web-page.js). As scroll-padding on
+       html, it would also shift where Chrome restores the page on reload) */
+    :focus-visible, :root:not(.tex8web-js) :target {
+        scroll-margin-top: calc(env(safe-area-inset-top, 0px) + 3.25rem + 1px + var(--tex8web-text-em)); }
+    .tex8web-where:not([hidden]) { display: block; flex: 1; min-width: 0; overflow: hidden;
+        font: inherit; font-size: 0.875em; line-height: 1.25rem; text-align: start;
+        white-space: nowrap; text-overflow: ellipsis;
+        /* (slightly above center, where lowercase letters look low) */
+        padding-block: 0.275rem 0.475rem; }
+    /* (no room for a # in the margin: its link covers the heading,
+       theorem head, or box title instead, under the links in it but over
+       its math, which MathJax positions) */
+    :is(h2, h3, h4, h5, h6, .newtheorem .head, .tcolorbox-title) { position: relative; }
+    .tex8web-permalink { z-index: 1; inset: 0; transform: none; color: transparent; }
+    :is(h2, h3, h4, h5, h6, .newtheorem .head, .tcolorbox-title) a[href]:not(.tex8web-permalink) { position: relative;
+        z-index: 2; }
+    /* (transparent, as hidden buttons cannot be reached by keyboard; the
+       transition below fades to this state) */
+    .tex8web-controls.tex8web-away:not(:has(:focus-visible)) { transform: translateY(-100%);
+        opacity: 0; }
+    /* (at the top, the title has the space above it that a wide screen
+       gives, and content the document pulls up into that strip stays
+       visible. tex8web-head.js sets the class; tex8web-page.js updates
+       it) */
+    .tex8web-top .tex8web-controls { border-bottom-color: transparent;
+        background-color: transparent; }
+}
+@media (prefers-reduced-motion: no-preference) {
+    @media not (min-width: 79.00em) {
+        .tex8web-controls { transition: transform var(--tex8web-fade), opacity var(--tex8web-fade),
+            border-color var(--tex8web-fade), background-color var(--tex8web-fade); }
+        .tex8web-controls.tex8web-away:not(:has(:focus-visible)) {
+            transition: transform var(--tex8web-fade), opacity 0s var(--tex8web-fade),
+                border-color var(--tex8web-fade), background-color var(--tex8web-fade); }
+    }
+}
+
+/* the table of contents: a drawer from the left, opened by the contents
+   button, sliding in unless the reader prefers reduced motion. On a wide
+   screen, a column beside the text, as wide as the drawer and as
+   footnotes, which the button hides and shows with a fade
+   (tex8web-page.js). Lines close together, entries a little apart.
+   tex8web-page.js marks the section being read, and shows its
+   subsections and those the reader opens, or every entry if all fit.
+   The width is at most 85vw, padding included. The height is auto,
+   between the insets, so that the drawer, padding included, is as tall as
+   the window (a popover is fit-content tall by default) */
+.tex8web-toc { --tex8web-toc-pad: 1.25rem; inset: 0 auto 0 0; font-size: 1rem;
+    width: min(var(--tex8web-margin), 85vw - 2 * var(--tex8web-toc-pad)); height: auto;
+    max-height: none; margin: 0; padding: 4rem var(--tex8web-toc-pad) 2rem; border: 0;
+    border-inline-end: 1px solid color-mix(in srgb, currentColor 15%, transparent);
+    color: var(--tex8web-text); background-color: var(--tex8web-bg); overflow-y: auto;
+    scrollbar-width: none; }
+/* (scrolls without a scroll bar: ::-webkit-scrollbar for Safari before
+   18.2) */
+.tex8web-toc::-webkit-scrollbar { display: none; }
+.tex8web-toc::backdrop { background-color: rgb(0 0 0 / 0.3); }
+@media (prefers-reduced-motion: no-preference) {
+    .tex8web-toc { translate: -100% 0; transition: translate var(--tex8web-fade),
+        display var(--tex8web-fade) allow-discrete, overlay var(--tex8web-fade) allow-discrete; }
+    .tex8web-toc:popover-open { translate: 0; }
+    @starting-style { .tex8web-toc:popover-open { translate: -100% 0; } }
+    .tex8web-toc::backdrop { opacity: 0; transition: opacity var(--tex8web-fade); }
+    .tex8web-toc:popover-open::backdrop { opacity: 1; }
+    @starting-style { .tex8web-toc:popover-open::backdrop { opacity: 0; } }
+}
+/* (the document's title above, not bold, with lines as close as the
+   entries'. The space below it is set on the table of contents heading,
+   so that it does not change with the title's size) */
+.tex8web-toc-doctitle { display: block; font-size: 1.25em; line-height: 1.25; }
+.tex8web-toc-title { margin-block: 0 0.5em; font-weight: bold; }
+.tex8web-toc-doctitle + .tex8web-toc-title { margin-block-start: 2.25em; }
+.tex8web-toc .tableofcontents { font-size: 0.875em; line-height: 1.25; }
+.tex8web-toc .tableofcontents > span { padding-top: 0.3em; }
+/* (tex4ht hyphenates links) */
+.tex8web-toc a { color: inherit; hyphens: manual; }
+.tex8web-toc a[aria-current] { border-radius: 0.2em;
+    background-color: var(--tex8web-highlight); }
+/* (hover tint, as on the controls) */
+@media (hover: hover) {
+    .tex8web-toc a:not([aria-current]):hover { border-radius: 0.2em;
+        background-color: var(--tex8web-hover); }
+}
+/* the chevron after a section with subsections (tex8web-page.js), which
+   shows or hides them. Its width is in rem, as the column's, not in the
+   text's em, so that in any document it is as far from the right edge as
+   the text is from the left */
+.tex8web-toc-more { position: relative; flex: none; align-self: flex-start; width: 1rem;
+    margin-inline-start: auto; padding: 0; border: 0; font: inherit; line-height: inherit;
+    text-align: end; color: inherit; background: none; cursor: pointer; opacity: 0; }
+/* (two sides of a rotated square, its middle moved to the math axis, a
+   quarter em above the baseline, as a parenthesis's middle is) */
+.tex8web-toc-more::before { content: ""; display: inline-block; box-sizing: border-box;
+    width: 0.45em; height: 0.45em; margin-inline-end: 0.15em; border: solid currentColor;
+    border-width: 0 1.5px 1.5px 0; rotate: -45deg; translate: 0 -0.025em; }
+.tex8web-toc-more[aria-expanded="true"]::before { rotate: 45deg; translate: 0 -0.185em; }
+.tex8web-toc-more[aria-expanded="true"], .tableofcontents > span:hover > .tex8web-toc-more { opacity: 0.3; }
+.tex8web-toc-more:focus-visible, .tableofcontents > span > .tex8web-toc-more:hover { opacity: 0.8; }
+@media (hover: none) {
+    .tex8web-toc-more { opacity: 0.3; }
+    /* (a larger touch target, to the column's edge and between lines) */
+    .tex8web-toc-more::after { content: ""; position: absolute;
+        inset: -0.6em calc(-1 * var(--tex8web-toc-pad)) -0.6em 0; }
+    /* (clipped at the last entry, where the larger target would make the
+       column scroll) */
+    .tex8web-toc .tableofcontents { overflow-y: clip; }
+}
+/* (the section being read is highlighted when its subsections, which
+   would hold the mark, are hidden) */
+.tex8web-toc:not(.tex8web-toc-all) .tex8web-reading:has(> .tex8web-toc-more[aria-expanded="false"]) > a {
+    border-radius: 0.2em; background-color: var(--tex8web-highlight); }
+/* the filter (tex8web-page.js): a field, and the matches in place of the
+   entries. While the field has focus, the selected match, which Enter
+   opens, is highlighted */
+.tex8web-toc-filter { display: block; box-sizing: border-box; width: 100%; margin-block: 0 0.75em;
+    padding: 0.25em 0; border: 0; border-radius: 0;
+    border-bottom: 1px solid color-mix(in srgb, currentColor 25%, transparent);
+    font: inherit; font-size: 0.875em; color: inherit; background: none; appearance: none; }
+.tex8web-toc-filter:focus { outline: none; border-bottom-color: currentColor; }
+/* (Chrome's and Safari's clear button in the text's color, not the
+   system accent) */
+.tex8web-toc-filter::-webkit-search-cancel-button { filter: grayscale(1); opacity: 0.6; }
+/* (hidden without JavaScript, as the theme button) */
+:root:not(.tex8web-js) .tex8web-toc-filter { display: none; }
+/* (Safari on iOS zooms in when a field with a font under 16px is focused) */
+@media (pointer: coarse) { .tex8web-toc-filter { font-size: max(16px, 0.875em); } }
+.tex8web-toc-results { margin: 0; padding: 0; list-style: none; font-size: 0.875em; line-height: 1.25; }
+.tex8web-toc-results li { padding-top: 0.6em; }
+.tex8web-toc-where, .tex8web-toc-none { opacity: 0.6; }
+.tex8web-toc-filter:focus ~ .tex8web-toc-results [aria-selected="true"] a { border-radius: 0.2em;
+    background-color: var(--tex8web-highlight); }
+.tex8web-js .tex8web-toc:not(.tex8web-toc-all) .tableofcontents > :is(.subsectionToc, .likesubsectionToc,
+    .subsubsectionToc, .likesubsubsectionToc, .paragraphToc, .likeparagraphToc,
+    .subparagraphToc, .likesubparagraphToc):not(.tex8web-open) { display: none; }
+/* (all entries shown, when all fit: tex8web-page.js) */
+.tex8web-toc-all .tex8web-toc-more { display: none; }
+@media (min-width: 79.00em) {
+    /* (the icons where they are in the narrow screen's bar) */
+    .tex8web-controls { inset: var(--tex8web-icons-inset); padding: 0.125rem; border: 0;
+        border-radius: 0.5rem; }
+    /* (the contents button needs tex8web-page.js on a wide screen) */
+    :root:not(.tex8web-js) .tex8web-contents { display: none; }
+    /* (its text 1.25rem in, where the drawer's text and the icons are) */
+    .tex8web-toc, .tex8web-toc:popover-open { display: block; position: fixed;
+        inset: var(--tex8web-column-inset); width: var(--tex8web-margin);
+        --tex8web-toc-pad: 0.5rem; padding: 0 var(--tex8web-toc-pad); border: 0; background: none; translate: none; transition: none; }
+    .tex8web-toc-hidden .tex8web-toc { display: none; opacity: 0; }
+    .tex8web-toc::backdrop { display: none; }
+    /* (only on a button press, not on page load or when the window
+       widens) */
+    @media (prefers-reduced-motion: no-preference) {
+        .tex8web-toggling .tex8web-toc { transition: opacity var(--tex8web-fade),
+            display var(--tex8web-fade) allow-discrete; }
+        @starting-style { .tex8web-toggling .tex8web-toc { opacity: 0; } }
+    }
+}
+
+/* footnotes (text.lua), each after the paragraph with its mark, or on a
+   wide screen beside it, lined up with the mark by tex8web-page.js. In
+   the text's color, as in LaTeX, even inside a block colored by \color */
+.tex8web-sidenote { color: var(--tex8web-text); margin-block: 0.5em 1em; padding-inline-start: 0.75em;
+    border-inline-start: 2px solid color-mix(in srgb, currentColor 20%, transparent); }
+.tex8web-sidenote p { margin: 0; text-indent: 0; }
+/* (\footnotesize's leading, computed as for the abstract. A raised mark,
+   here or in the text, does not push its line away from the one above) */
+aside.footnotetext p { line-height: calc(var(--tex8web-footnote-leading, 1) * 1lh); }
+.footnote-mark sup { line-height: 0; }
+/* (in place of tex4ht's p + p, p + div, and p + pre, which fail when a
+   footnote comes between; :is, to outweigh tex4ht's p { margin-top: 0 }) */
+:where(p + .tex8web-sidenote, .tex8web-sidenote + .tex8web-sidenote) + :is(div, pre) {
+    margin-top: 1em; }
+:where(p + .tex8web-sidenote, .tex8web-sidenote + .tex8web-sidenote) + :is(p, div.tabular) {
+    margin-top: var(--tex8web-parskip, 1em); }
+@media (min-width: 79.00em) {
+    .tex8web-sidenote { float: right; clear: right; position: relative;
+        width: var(--tex8web-margin); margin: 0 calc(-1 * var(--tex8web-gap) - var(--tex8web-margin)) 0.75em 0;
+        padding: 0; border: 0; }
+}
+
+/* a preview of a link's target on the page (tex8web-page.js), at most
+   about as wide as the text, without the target's space above and below.
+   !important because tex4ht puts that space in style attributes */
+.tex8web-preview { inset: auto; margin: 0;
+    max-width: min(var(--tex8web-textwidth), 100vw - 1rem); max-height: 50vh; overflow: auto;
+    padding: 0.5rem 0.75rem; font-size: 0.9em; color: var(--tex8web-text);
+    background-color: var(--tex8web-bg); border-radius: 0.5rem;
+    border: 1px solid color-mix(in srgb, currentColor 20%, transparent);
+    box-shadow: 0 0.25rem 1rem rgb(0 0 0 / 0.2); }
+.tex8web-preview > :first-child { margin-top: 0 !important; }
+.tex8web-preview > :last-child { margin-bottom: 0 !important; }
+/* an equation alone: its number right beside it, not at the column's edge
+   with as much space on the other side for centering. !important because
+   MathJax sets these in style attributes */
+.tex8web-preview > * > mjx-container[display] { margin: 0; }
+.tex8web-preview > * > mjx-container[display] > mjx-math > mjx-mtable { min-width: 0 !important; }
+.tex8web-preview > * > mjx-container[display] > mjx-math > mjx-mtable[side="right"] > mjx-table {
+    margin-left: 0 !important; }
+.tex8web-preview > * > mjx-container[display] > mjx-math > mjx-mtable[side="left"] > mjx-table {
+    margin-right: 0 !important; }
+.tex8web-preview > * > mjx-container[display] > mjx-math > mjx-mtable > mjx-labels {
+    width: 100% !important; }
+
+/* smooth scrolling to a link's target, unless the reader prefers reduced
+   motion. tex8web-page.js adds the class on a click, so that the restored
+   place on reload is not scrolled to */
+@media (prefers-reduced-motion: no-preference) { html.tex8web-smooth { scroll-behavior: smooth; } }
+
+/* a link to another tex8web page of the site: the page shifts a little,
+   to the left going forward and to the right going back, and fades into
+   the next (direction from tex8web-head.js). Browsers run view
+   transitions only between pages of one origin */
+@media (prefers-reduced-motion: no-preference) {
+    @view-transition { navigation: auto; }
+    :root:active-view-transition-type(tex8web-forward)::view-transition-old(root) {
+        animation: var(--tex8web-fade) ease-in both tex8web-to-left; }
+    :root:active-view-transition-type(tex8web-forward)::view-transition-new(root) {
+        animation: var(--tex8web-fade) ease-out both tex8web-from-right; }
+    :root:active-view-transition-type(tex8web-back)::view-transition-old(root) {
+        animation: var(--tex8web-fade) ease-in both tex8web-to-right; }
+    :root:active-view-transition-type(tex8web-back)::view-transition-new(root) {
+        animation: var(--tex8web-fade) ease-out both tex8web-from-left; }
+}
+@keyframes tex8web-to-left { to { opacity: 0; translate: -1.5rem; } }
+@keyframes tex8web-from-right { from { opacity: 0; translate: 1.5rem; } }
+@keyframes tex8web-to-right { to { opacity: 0; translate: 1.5rem; } }
+@keyframes tex8web-from-left { from { opacity: 0; translate: -1.5rem; } }
+
+/* --- print ------------------------------------------------------------- */
+
+/* print: light mode colors whatever the theme, with box backgrounds,
+   which browsers omit unless told. No controls, table of contents (it has
+   no page numbers), # links, previews, or picture viewer: fixed elements
+   would print on every sheet. Footnotes follow the sheet's width: after
+   their paragraph on paper, as on a narrow screen, and beside the text
+   only on a sheet as wide as a wide screen. Their top is reset, as
+   tex8web-page.js sets it for the screen. A display, tabular, or
+   verbatim that scrolls on a narrow screen runs into the margin as in the
+   PDF; !important because MathJax's rule follows this stylesheet. No page
+   break inside a tcolorbox (tcolorbox's default, unless breakable, which
+   tex8web cannot tell), a display, a figure, or a table, nor after a
+   heading. Theorems and framed boxes break, as in the PDF */
+@media print {
+    :root { color-scheme: light !important; --tex8web-picture-filter: none !important;
+        --tex8web-highlight: transparent; print-color-adjust: exact; }
+    .tex8web-controls, .tex8web-toc, .tex8web-preview, .tex8web-viewer, .tex8web-permalink {
+        display: none !important; }
+    html body { margin-block: 0; padding-inline: 0; }
+    .tex8web-sidenote { top: auto !important; }
+    mjx-container[display], div.tabular, pre { overflow: visible !important; }
+    .tex8web-scrolls { mask-image: none; }
+    .tcolorbox, mjx-container[display], figure, div.table, table { break-inside: avoid; }
+    h1, h2, h3, h4, h5, h6 { break-after: avoid; }
+}
+
+:root { --tex8web-display-above: 1.00456em; --tex8web-display-below: 1.00456em; }
+:root { --tex8web-toc-section-number: 1.49149em; --tex8web-toc-subsection-indent: 1.49149em; --tex8web-toc-subsection-number: 2.28696em; --tex8web-toc-subsubsection-indent: 3.77844em; --tex8web-toc-subsubsection-number: 3.18184em; --tex8web-toc-paragraph-indent: 6.9603em; --tex8web-toc-paragraph-number: 4.07675em; --tex8web-toc-subparagraph-indent: 9.94327em; --tex8web-toc-subparagraph-number: 4.97163em; --tex8web-toc-section-skip: 0.24858em; --tex8web-toc-subsection-skip: 0em; }
+:root { --tex8web-list-sep: 0.82191em; --tex8web-item-sep: 0.82191em; --tex8web-leftmargin: 2.5em; }
+:root { --tex8web-intextsep: 1.64383em; --tex8web-floatsep: 1.09589em; }
+:root { --tex8web-caption-before: 0.91324em; --tex8web-caption-after: -0.54794em; }
+:root { --tex8web-link: light-dark(#1874CD, oklch(from #1874CD var(--tex8web-dark-link) var(--tex8web-dark-link-chroma) h)); }
+:root { --tex8web-cite: light-dark(#3CB271, oklch(from #3CB271 var(--tex8web-dark-link) var(--tex8web-dark-link-chroma) h)); }
+:root { --tex8web-url: light-dark(#CD3278, oklch(from #CD3278 var(--tex8web-dark-link) var(--tex8web-dark-link-chroma) h)); }
+img[src^="main"] { filter: none; }
+img[src^="main"][src$="x.svg"] { filter: var(--tex8web-picture-filter, none); }
+:root { --tex8web-title-size: 1.57808em; }
+:root { --tex8web-section-size: 1.31506em; }
+:root { --tex8web-section-before: 1.96439em; --tex8web-section-after: 0.8185em; --tex8web-section-after-text: 1.07637em;}
+:root { --tex8web-subsection-size: 1.09589em; }
+:root { --tex8web-subsection-before: 1.5715em; --tex8web-subsection-after: 0.78575em; --tex8web-subsection-after-text: 0.8611em;}
+:root { --tex8web-subsubsection-size: 1em; }
+:root { --tex8web-subsubsection-before: 1.39896em; --tex8web-subsubsection-after: 0.64568em; --tex8web-subsubsection-after-text: 0.64568em;}
+:root { --tex8web-paragraph-size: 1em; }
+:root { --tex8web-paragraph-before: 1.39896em; --tex8web-paragraph-after: 0.99432em; --tex8web-paragraph-after-text: 0.99432em;}
+:root { --tex8web-subparagraph-size: 1em; }
+:root { --tex8web-subparagraph-before: 1.39896em; --tex8web-subparagraph-after: 0.99432em; --tex8web-subparagraph-after-text: 0.99432em;}
+:root { --tex8web-part-align: left; }
+:root { --tex8web-part-size: 1.89406em; }
+:root { --tex8web-part-label-size: 0.6943em; }
+:root { --tex8web-part-label-after: 0em;--tex8web-part-before: 0.90926em;--tex8web-part-after: 0.68195em;}
+:root { --tex8web-toc-part-size: 1.09589; --tex8web-toc-part-family: inherit; --tex8web-toc-part-weight: bold; --tex8web-toc-part-style: normal; --tex8web-toc-part-variant: normal; }
+:root { --tex8web-toc-section-size: 1; --tex8web-toc-section-family: inherit; --tex8web-toc-section-weight: normal; --tex8web-toc-section-style: normal; --tex8web-toc-section-variant: normal; }
+:root { --tex8web-toc-subsection-size: 1; --tex8web-toc-subsection-family: inherit; --tex8web-toc-subsection-weight: normal; --tex8web-toc-subsection-style: normal; --tex8web-toc-subsection-variant: normal; }
+:root { --tex8web-toc-subsubsection-size: 1; --tex8web-toc-subsubsection-family: inherit; --tex8web-toc-subsubsection-weight: normal; --tex8web-toc-subsubsection-style: normal; --tex8web-toc-subsubsection-variant: normal; }
+:root { --tex8web-toc-paragraph-size: 1; --tex8web-toc-paragraph-family: inherit; --tex8web-toc-paragraph-weight: normal; --tex8web-toc-paragraph-style: normal; --tex8web-toc-paragraph-variant: normal; }
+:root { --tex8web-toc-subparagraph-size: 1; --tex8web-toc-subparagraph-family: inherit; --tex8web-toc-subparagraph-weight: normal; --tex8web-toc-subparagraph-style: normal; --tex8web-toc-subparagraph-variant: normal; }
+:root { --tex8web-textwidth: 42.90001em; }
+:root { --tex8web-footnote-leading: 0.80882; }
+:root { --hlpink: light-dark(#FFECF1, #5C3131); }
+.hlpink { background-color: var(--hlpink); }
+:root { --hlyellow: light-dark(#FFF9D2, #58492E); }
+.hlyellow { background-color: var(--hlyellow); }
+:root { --hlblue: light-dark(#DFF9FF, #2E4755); }
+.hlblue { background-color: var(--hlblue); }
+:root { --hlgreen: light-dark(#E8FCEA, #2F4228); }
+.hlgreen { background-color: var(--hlgreen); }
+:root { --hlpurple: light-dark(#F0E8FC, #473B59); }
+.hlpurple { background-color: var(--hlpurple); }
+:root { --inkpink: light-dark(#D14949, #F28B8B); }
+.inkpink { color: var(--inkpink); }
+:root { --inkyellow: light-dark(#BAA249, #E0C878); }
+.inkyellow { color: var(--inkyellow); }
+:root { --inkblue: light-dark(#4A6AD4, #8FA8F0); }
+.inkblue { color: var(--inkblue); }
+:root { --inkgreen: light-dark(#4B8A48, #8CC98A); }
+.inkgreen { color: var(--inkgreen); }
+:root { --inkpurple: light-dark(#735A99, #B9A3DE); }
+.inkpurple { color: var(--inkpurple); }
+.framedenv[id^="comment-"] { border: none; border-left: 3pt solid var(--line); padding-left: 0.667em; }
+img[src$="/pencil.svg"] { height: 1em; vertical-align: -0.1em; }
+h1.titleHead { font-size: calc(17rem / 12); }
+div.author, div.date { font-size: calc(12.84404rem / 12); }
+.sectionHead, .likesectionHead { font-size: calc(17rem / 12); margin-top: 1.5em; }
+.subsectionHead, .likesubsectionHead { font-size: calc(14rem / 12); margin-top: 1.5em; }
+:root { --tex8web-textwidth: 45em; }
+.tableofcontents { padding-bottom: 1em; }
+:root { --tex8web-abstract-leading: 0.88235; }
+:root { --tex8web-abstract-left: 2.5em; --tex8web-abstract-right: 2.5em; }
+/* end css.sty */
+
